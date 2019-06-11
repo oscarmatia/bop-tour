@@ -1,0 +1,298 @@
+*
+{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	
+	overflow-y:hidden; 
+}
+
+.barra_navegacion
+{
+	background-color: black;
+	
+	position: absolute;
+	
+	height: 7.5%;
+	width: 100%;
+	
+	opacity: 0.4;
+}
+
+
+.boton
+{
+	position: absolute;
+	margin-top: 0.1%;
+	margin-left: 88.5%;
+}
+
+input#botonsito
+{
+	padding: 12px 30px 15px;
+	color: white;
+	font-size: 1em;
+	background-color: #c79d29;
+	border: 0px;
+	-webkit-border-radius:5px;
+	-webkit-box-shadow: 0px 4px 0px #a58325;
+	-webkit-transition: background-color .25s;
+}
+
+input#botonsito:hover
+{
+	background-color: #e3ae1a
+}
+
+.texto
+{
+	position: absolute;
+	
+	display: inline-block;
+	
+	width:  120px;
+	height: 100px;
+	
+	margin-left: 32%;
+	margin-top: 24%;
+}
+
+.texto2
+{
+	position: absolute;
+	
+	display: inline-block;
+	
+	width:  120px;
+	height: 100px;
+	
+	margin-left: 59.5%;
+	margin-top: 24%;
+}
+
+.footer
+{
+	background-color: wheat;
+	
+	position: absolute;
+	
+	height: 10%;
+	width: 100%;
+	
+	margin-top: 45.8%;
+	
+	opacity: 0.6;
+}
+
+.contenedor_principal
+{	
+	position: absolute;
+	
+	height: 86%;
+	width: 100%;
+	
+	margin-top: 3.4%;
+}
+
+.imagen_fondo
+{
+	position: absolute;
+	
+	width: 100%;
+	height: 100%;
+}
+
+.que_quieres_hacer_hoy
+{
+	background-color: gainsboro;
+	
+	position: absolute;
+	
+	height: 60%;
+	width: 50%;
+	
+	margin-top: 8.5%;
+	margin-left: 25%;
+	
+	opacity: 0.6;
+	border-radius: 4%;
+	border: solid;
+}
+
+.titulo
+{
+	margin-top: 3%;
+	font-size: 24px;
+	color: black;
+}
+
+.central
+{
+	position: absolute;
+	
+	width: 15%;
+	height: 9%;
+	
+	margin-top:  45.8%;
+	margin-left: 44%;
+}
+
+
+.siguenos
+{
+	position: absolute;
+	
+	font-size: 14px;
+	
+	margin-left: 36%;
+	margin-top: 6%;
+	
+	color: dimgrey;
+}
+
+.facebook
+{	
+	position: absolute;
+	
+	float: left;
+	
+	height: 80%;
+	width: 25%;
+	
+	margin-left: 5%;
+	margin-top: 12%;
+}
+
+.instagram
+{
+	position: absolute;
+	
+	float: left;
+	
+	height: 60%;
+	width: 29%;
+	
+	margin-top: 15%;
+	margin-left: 65%;
+}
+
+.twitter
+{
+	position: absolute;
+	
+	float: left;
+	
+	height:60%;
+	width: 35%;
+	
+	margin-right: 2%;
+	margin-left: 30%;
+	margin-top: 15%;
+}
+
+
+.btn 
+{
+  	cursor: pointer;
+  	margin: 10px;
+  	border-radius: 5px;
+  	padding: 10px;
+  	font-size: 16px;
+  	transition: .3s;
+  	-webkit-transition: .3s;
+  	-moz-transition: .3s;
+  	-o-transition: .3s;
+  	display: inline-block;
+	
+	margin-top: 20.3%;
+	margin-left: 61%;
+	
+	position: absolute;
+}
+
+
+.green 
+{
+  color: green;
+  border: 2px green solid;
+}
+
+
+.green:hover 
+{
+  color: #fff;
+  background-color: #2ecc71;
+}
+
+
+.btn2 
+{
+  	cursor: pointer;
+  	margin: 10px;
+  	border-radius: 5px;
+  	padding: 10px;
+  	font-size: 16px;
+  	transition: .3s;
+  	-webkit-transition: .3s;
+  	-moz-transition: .3s;
+  	-o-transition: .3s;
+  	display: inline-block;
+	
+	margin-top: 20.3%;
+	margin-left: 33%;
+	
+	position: absolute;
+}
+
+
+.green2
+{
+  color: green;
+  border: 2px green solid;
+}
+
+
+.green2:hover 
+{
+  color: #fff;
+  background-color: #2ecc71;
+}
+
+.logo
+{
+	position: absolute;
+	
+	height: 90%;
+	width: 3.5%;
+	
+	margin-left: 1%;
+	margin-top: 0.2%;
+}
+
+.sesion_usuario
+{
+	position: absolute;
+	background-color: black;
+	color: white;
+	
+	height: 4.4%;
+	width: 13%;
+	
+	margin-left: 86.6%;
+	margin-top: 0.3%;
+	padding-top: 0.7%;
+}
+
+.perfil_imagen
+{
+	position: absolute;
+	background-color: azure;
+	
+	border-radius: 100%;
+	
+	height: 6%;
+	width: 3.3%;
+	
+	margin-left: 83%;
+	margin-top: 0.2%;
+}
+

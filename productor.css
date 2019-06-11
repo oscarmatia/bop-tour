@@ -1,0 +1,304 @@
+*{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	
+	overflow-y:hidden; 
+}
+
+
+.imagen_fondo{
+	position: absolute;
+	
+	width: 100%;
+	height: 100%;
+    opacity: 0.9;
+}
+
+.barra_navegacion{
+	background-color: black;
+	
+	position: absolute;
+	
+	height: 8%;
+	width: 100%;
+	
+	opacity: 0.4;
+}
+.logo
+{
+	position: absolute;
+	
+	height: 90%;
+	width: 3.5%;
+	
+	margin-left: 1%;
+	margin-top: 0.2%;
+}
+
+.boton
+{
+	position: absolute;
+	margin-top: 0.1%;
+	margin-left: 88.5%;
+}
+input#botonsito
+{
+	padding: 12px 30px 15px;
+	color: white;
+	font-size: 1em;
+	background-color: #c79d29;
+	border: 0px;
+	-webkit-border-radius:5px;
+	-webkit-box-shadow: 0px 4px 0px #a58325;
+	-webkit-transition: background-color .25s;
+}
+
+input#botonsito:hover
+{
+	background-color: #e3ae1a
+}
+.sesion_usuario
+{
+	position: absolute;
+	color: white;
+	
+	height: 4.5%;
+	width: 14%;
+	
+	margin-left: 74%;
+	margin-top: 0.3%;
+	padding-top: 0.7%;
+    
+    display: block;
+    text-align: -webkit-center;
+}
+
+.perfil_imagen
+{
+	position: absolute;
+	background-color: azure;
+	
+	border-radius: 100%;
+	
+	height: 6%;
+	width: 3.3%;
+	
+	margin-left: 70%;
+	margin-top: 0.2%;
+}
+
+.footer{
+	background-color: wheat;
+	
+    
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+	opacity: 0.6;
+}
+
+.siguenos{
+	
+	font-size: 18px;
+    text-align: center;
+	
+	color: dimgrey;
+    height: 100%;
+    
+}
+
+.facebook
+{	
+    
+	height: 80px;
+	width: 80px;
+	
+}
+
+.instagram
+{
+
+	height: 80px;
+	width: 80px;
+
+}
+
+.twitter
+{
+	
+	height: 80px;
+	width: 80px;
+
+}
+
+.contenedor{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    
+    margin-top: 5.6%;
+    
+    overflow: hidden;
+}
+.izquierda{
+   
+    float: left;
+    width: 45%;
+    height: 90%;
+    
+    margin-top: 1%;
+    margin-left: 3%;
+    
+    border-style:solid;
+    border-radius: 5%;
+}
+
+.derecha{
+    float: left;
+    
+    width: 45%;
+    height: 90%;
+    
+    margin-top: 1%;
+    margin-left: 3%;
+    
+    border-style:solid;
+    border-radius: 5%;
+}
+
+.perfil_imagen2{
+    position: absolute;
+    border-radius: 40%;
+    margin-left: 12%;
+    margin-top: 1%;
+}
+
+.linea{
+    margin-top: 45%;
+    border-color: black;
+}
+.lista{
+    padding-top: 5%;
+    color: wheat;
+    margin-top: 5%;
+}
+
+.nombre_productor{
+    position: absolute;
+    color: black;
+    margin-top: 16%;
+    width: 45%;
+}
+
+#perfil{
+    margin-left: 15%;
+    color: white;
+}
+#icon1{
+    position: absolute;
+    margin-left: 28%;
+    margin-top: 13%;
+}
+.linea2{
+    border-color: black;
+}
+
+.arriba{
+    width: 98%;
+    height: 45%;   
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+.abajo{
+    width: 98%;
+    height: 45%;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+.title{
+    display: flex;
+    width: 98%;
+    height: 15%;
+}
+#icon2{
+    margin-top: 1%;
+    margin-left: 2%;
+}
+#text1{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 0.5%;
+    font-weight: bold;
+    text-transform: uppercase;    
+}
+
+#linea2{
+    color: wheat;
+}
+#products{
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+.productos{
+    width: 98%;
+    height: 55%;
+}
+
+.iconos{
+    display: flex;
+    width: 98%;
+    height: 15%;
+}
+
+#icon_add{
+    
+}
+#text_add{
+    margin-left: 2%;
+    margin-top: 0.6%;
+}
+
+#icon3{
+    margin-left: 10%;
+}
+#text3{
+    margin-left: 2%;
+    margin-top: 0.6%;
+}
+.titulo{
+    display: flex;
+    width: 98%;
+    height: 15%;
+}
+
+.tiendas{
+    width: 98%;
+    height: 60%;
+}
+#tiends{
+    margin-left: 4%;
+    margin-top: 2%;
+    color: wheat;
+}
+.iconos2{
+    display: flex;
+    width: 98%;
+    height: 18%;
+}
+
+#icon4{
+    margin-left: 50%;
+}
+#text4{
+    color: wheat;
+    margin-left: 2%;
+    margin-top: 0.6%;
+}
+
+
+

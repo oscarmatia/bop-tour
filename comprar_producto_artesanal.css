@@ -1,0 +1,253 @@
+*
+{
+	margin: 0;
+	font-family: sans-serif;
+	overflow-y:hidden; 
+}
+
+.barra_navegacion
+{
+	background-color: black;
+	
+	position: absolute;
+	
+	height: 7%;
+	width: 100%;
+	
+	opacity: 0.4;
+}
+
+.footer
+{
+	background-color: wheat;
+	
+	position: absolute;
+	
+	height: 10%;
+	width: 100%;
+	
+	margin-top: 46.3%;
+	
+	opacity: 0.6;
+}
+
+.contenedor_principal
+{	
+	position: absolute;
+	
+	height: 86%;
+	width: 100%;
+	
+	margin-top: 3.4%;
+}
+
+.imagen_fondo
+{
+	position: absolute;
+	
+	width: 100%;
+	height: 100%;
+}
+
+.productos_artesanales
+{
+	position: absolute;
+	color: black;
+	margin-top: 6%;
+	margin-left: 44%;
+	
+	font-size: 24px;
+}
+
+.que_quieres_hacer_hoy
+{
+	background-color: black;
+	
+	position: absolute;
+	
+	height: 60%;
+	width: 60%;
+	
+	margin-top: 10.5%;
+	margin-left: 20%;
+	
+	opacity: 0.4;
+	border-radius: 4%;
+	border: solid;
+}
+
+.titulo
+{
+	margin-top: 3%;
+	font-size: 24px;
+	color: black;
+}
+
+.central
+{
+	position: absolute;
+	
+	width: 15%;
+	height: 9.7%;
+	
+	margin-top:  45.6%;
+	margin-left: 44%;
+}
+
+.siguenos
+{
+	position: absolute;
+	
+	font-size: 14px;
+	
+	margin-left: 31%;
+	margin-top: 6%;
+	
+	color: dimgrey;
+}
+
+.facebook
+{	
+	position: absolute
+	
+	float: left;
+	
+	height: 80%;
+	width: 25%;
+	
+	margin-left: 5%;
+	margin-top: 12%;
+}
+
+.instagram
+{
+	position: absolute;
+	
+	float: left;
+	
+	height: 60%;
+	width: 29%;
+	
+	margin-top: 15%;
+	margin-left: 3%;
+}
+
+.twitter
+{
+	position: absolute;
+	
+	float: left;
+	
+	height:60%;
+	width: 35%;
+	
+	margin-right: 2%;
+	margin-left: 30%;
+	margin-top: 15%;
+}
+
+.logo
+{
+	position: absolute;
+	
+	height: 90%;
+	width: 3.5%;
+	
+	margin-left: 1%;
+	margin-top: 0.2%;
+}
+
+
+
+.buscar
+{
+	position: absolute;
+	
+	width: 50%;
+	
+	margin-top: 12%;
+	margin-left: 27%;	
+}
+
+
+
+.sesion_usuario
+{
+	position: absolute;
+	color: white;
+	
+	height: 10.4%;
+	width: 10%;
+	
+	margin-left: 82%;
+	margin-top: 1.1%;
+	
+	
+	font-size: 24px;
+}
+
+.perfil_imagen
+{
+	position: absolute;
+	background-color: azure;
+	
+	border-radius: 100%;
+	
+	height: 6%;
+	width: 3.3%;
+	
+	margin-left: 80%;
+	margin-top: 0.2%;
+}
+
+
+
+.boton
+{
+	position: absolute;
+	margin-top: 0.3%;
+	margin-left: 91.7%;
+}
+
+input#botonsito
+{
+	padding: 12px 30px 15px;
+	color: white;
+	font-size: 1em;
+	background-color: #c79d29;
+	border: 0px;
+	-webkit-border-radius:5px;
+	-webkit-box-shadow: 0px 4px 0px #a58325;
+	-webkit-transition: background-color .25s;
+}
+
+input#botonsito:hover
+{
+	background-color: #e3ae1a
+}
+
+
+.inp{
+  box-shadow: 0;
+  border: 0;
+  background-color: rgba(255, 255, 255, .1);
+  width: 90%;
+  margin-bottom: 35px;
+  height: 30px;
+  border: solid 2px rgba(255,255,255,.5);
+  font-size: 20px;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: right;
+  transition: all 1ms ease;
+}
+.fondo form .inp:focus{
+  outline:0px;
+  background-color: rgba(255, 255, 255, .6);
+  border: solid 2px rgba(255,255,255,.01);
+  color: #000;
+}
+
+
+
