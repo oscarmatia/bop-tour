@@ -17,12 +17,12 @@
 
 	session_start();
 	$_SESSION['nombre_cliente'] = $rows['nombre_cliente'];
-	header("Location: principal_registrado.php");
+	header("Location: principal_registrado_visitar.php");
 
 	if($filas > 0)
 	{
 		$_SESSION['login_user_sys']=$correo; // Iniciando la sesion
-		header("location: principal_registrado.php"); // Redireccionando a la pagina profile.php
+		header("location: planificar_ruta.php"); // Redireccionando a la pagina profile.php
 	}
 	else
 	{

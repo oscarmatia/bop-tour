@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-05-2019 a las 21:04:58
+-- Tiempo de generación: 13-06-2019 a las 23:42:53
 -- Versión del servidor: 10.1.39-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `bop-tour`
+-- Base de datos: `bop`
 --
 
 -- --------------------------------------------------------
@@ -28,7 +28,6 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `calificacion`
 --
 
-DROP TABLE IF EXISTS `calificacion`;
 CREATE TABLE `calificacion` (
   `ID_calificacion` int(4) NOT NULL,
   `nombre_calificacion` varchar(30) NOT NULL,
@@ -43,7 +42,6 @@ CREATE TABLE `calificacion` (
 -- Estructura de tabla para la tabla `cliente`
 --
 
-DROP TABLE IF EXISTS `cliente`;
 CREATE TABLE `cliente` (
   `ID_cliente` int(4) NOT NULL,
   `nombre_cliente` varchar(30) NOT NULL,
@@ -57,13 +55,21 @@ CREATE TABLE `cliente` (
   `puntos` int(7) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `cliente`
+--
+
+INSERT INTO `cliente` (`ID_cliente`, `nombre_cliente`, `apellido_cliente`, `rut`, `correo`, `sexo`, `password`, `direccion`, `fecha_nacimiento`, `puntos`) VALUES
+(1, 'gaspar', 'perez', '192751950', 'operez@ing.ucsc.cl', 'masculino', '12345', 'heras 1140 depto 601', '2019-06-04', 0),
+(2, 'Oscar', 'Perez', '192751950', 'operez@ing.ucsc.cl', 'H', '1234', 'NULL', '2018-11-30', 0),
+(3, 'claudia', 'perez', '192751950', 'operez@ing.ucsc.cl', 'M', '123', 'NULL', '1996-12-11', 0);
+
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `comuna`
 --
 
-DROP TABLE IF EXISTS `comuna`;
 CREATE TABLE `comuna` (
   `cut_comuna` int(2) NOT NULL,
   `nombre_comuna` varchar(30) NOT NULL,
@@ -76,7 +82,6 @@ CREATE TABLE `comuna` (
 -- Estructura de tabla para la tabla `locomocion`
 --
 
-DROP TABLE IF EXISTS `locomocion`;
 CREATE TABLE `locomocion` (
   `ID_locomocion` int(4) NOT NULL,
   `vehiculo` varchar(30) NOT NULL,
@@ -89,7 +94,6 @@ CREATE TABLE `locomocion` (
 -- Estructura de tabla para la tabla `lugar turistico`
 --
 
-DROP TABLE IF EXISTS `lugar turistico`;
 CREATE TABLE `lugar turistico` (
   `ID_lugar_turistico` int(4) NOT NULL,
   `nombre_lugar_turistico` varchar(30) NOT NULL,
@@ -107,7 +111,6 @@ CREATE TABLE `lugar turistico` (
 -- Estructura de tabla para la tabla `productor`
 --
 
-DROP TABLE IF EXISTS `productor`;
 CREATE TABLE `productor` (
   `ID_productor` int(6) NOT NULL,
   `nombre_productor` varchar(30) NOT NULL,
@@ -122,13 +125,19 @@ CREATE TABLE `productor` (
   `num_compras` int(7) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `productor`
+--
+
+INSERT INTO `productor` (`ID_productor`, `nombre_productor`, `apellido_productor`, `rut`, `correo`, `password`, `sexo`, `direccion`, `fecha_nacimiento`, `num_visitas`, `num_compras`) VALUES
+(1, 'Oscar', 'Perez', '19275195', 'operez@ing.ucsc.cl', '12345', 'masculino', 'heras 1140', '1996-08-23', 1, 1);
+
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `producto_artesanal`
 --
 
-DROP TABLE IF EXISTS `producto_artesanal`;
 CREATE TABLE `producto_artesanal` (
   `ID_producto_artesanal` int(4) NOT NULL,
   `nombre_producto` varchar(30) NOT NULL,
@@ -145,7 +154,6 @@ CREATE TABLE `producto_artesanal` (
 -- Estructura de tabla para la tabla `promocion`
 --
 
-DROP TABLE IF EXISTS `promocion`;
 CREATE TABLE `promocion` (
   `ID_promocion` int(4) NOT NULL,
   `nombre_promocion` varchar(30) NOT NULL,
@@ -158,7 +166,6 @@ CREATE TABLE `promocion` (
 -- Estructura de tabla para la tabla `provincia`
 --
 
-DROP TABLE IF EXISTS `provincia`;
 CREATE TABLE `provincia` (
   `cut_provincia` int(4) NOT NULL,
   `nombre_provincia` varchar(30) NOT NULL,
@@ -171,7 +178,6 @@ CREATE TABLE `provincia` (
 -- Estructura de tabla para la tabla `region`
 --
 
-DROP TABLE IF EXISTS `region`;
 CREATE TABLE `region` (
   `cut_region` int(2) NOT NULL,
   `nombre_region` varchar(30) NOT NULL
@@ -183,13 +189,10 @@ CREATE TABLE `region` (
 -- Estructura de tabla para la tabla `tienda`
 --
 
-DROP TABLE IF EXISTS `tienda`;
 CREATE TABLE `tienda` (
   `ID_tienda` int(4) NOT NULL,
   `nombre_tienda` varchar(40) NOT NULL,
   `ubicacion` varchar(40) NOT NULL,
-  `latitud` varchar(20) NOT NULL,
-  `longitud` varchar(20) NOT NULL,
   `ID_productor` int(4) NOT NULL,
   `rubro` varchar(30) NOT NULL,
   `imagen` varchar(50) NOT NULL
@@ -287,7 +290,7 @@ ALTER TABLE `calificacion`
 -- AUTO_INCREMENT de la tabla `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `ID_cliente` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_cliente` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `locomocion`
@@ -305,7 +308,7 @@ ALTER TABLE `lugar turistico`
 -- AUTO_INCREMENT de la tabla `productor`
 --
 ALTER TABLE `productor`
-  MODIFY `ID_productor` int(6) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_productor` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `producto_artesanal`

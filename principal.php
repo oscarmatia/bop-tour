@@ -12,7 +12,7 @@
 		<title>BOP-TOUR</title>
 		<link rel="stylesheet" href="principal.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<script src="principal.js"> </script>
+		<script src="principal_productor.js"> </script>		
 	</head>
 
 	<body>
@@ -27,7 +27,7 @@
 	<form action="" method="post">
 	
 		<div class="boton">
-			<input type="button" value="Iniciar Sesión" id="botonsito" onclick="redireccion_iniciar_sesion()">
+			<input type="button" value="Iniciar Sesión" id="botonsito" onclick="redireccion_iniciar_sesion_productor()">
 		</div>
 		
 	</form>	
@@ -43,8 +43,9 @@
 		</div>
 		
 	
-		<a href="iniciar_sesion.php" class="btn2 green2" style="text-decoration: none" ><b>Comprar</b></a>
-		<a href="iniciar_sesion.php"  class="btn green" style="text-decoration: none" >Visitar</a>
+		<a href="iniciar_sesion_comprar.php" class="btn2 green2" style="text-decoration: none" ><b>Comprar</b></a>
+		
+		<a href="iniciar_sesion_visitar.php"  class="btn green" style="text-decoration: none" >Visitar</a>
 			
 		<div class="texto">
 			<center>

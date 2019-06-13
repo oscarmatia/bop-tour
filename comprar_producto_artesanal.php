@@ -59,7 +59,7 @@
 						
 									
 		<?php
-			$conexion = mysqli_connect("localhost", "root", "", "proyecto");
+			$conexion = mysqli_connect("localhost", "root", "", "bop");
 
 			$consulta = "SELECT DISTINCT nombre_producto FROM producto_artesanal ";
 					

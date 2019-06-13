@@ -2,7 +2,7 @@
 
 	$busqueda = $_POST['busqueda'];
 
-	$conexion = mysqli_connect("localhost", "root", "", "proyecto");
+	$conexion = mysqli_connect("localhost", "root", "", "bop");
 
 	$consulta = "SELECT * FROM producto_artesanal WHERE nombre_producto='$busqueda' ";
 					
