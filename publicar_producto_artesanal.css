@@ -1,0 +1,413 @@
+html {
+	font-family: Roboto Condensed;
+}
+
+
+html, body {
+	height: 100%;
+	background-color: white;
+}
+
+* {
+	margin: 0;
+}
+
+.barra-3,barra-4{
+	color: #444444;
+}
+
+input[type=text], select,textarea{
+
+	font-size: 15px;
+	color: grey;
+
+}
+
+.barra-1{ /*barra de navegacion, iniciar sesion*/
+	width: 100%;
+	height: 10%;
+	background-color: gray;
+	display: inline-block;
+	box-shadow: inherit;
+}
+
+/*
+.boton-iniciar-sesion{
+	width: 130px;
+	height: 48px;
+	background: lightgreen; 
+	color: black;
+	text-align: center; 
+	border:1px black solid; 
+	padding: 12px 20px ; 
+	font-size: 13px; 
+	text-decoration: none;
+	border-radius: 100px;
+	float: right;
+	margin: -3.6% 1%;
+	cursor: pointer;
+}
+
+
+.boton-iniciar-sesion:hover{   
+	color:green;
+
+}
+*/
+.logo, img{
+	padding-left: 1%;
+	margin-top: 0.6%;
+	margin-left: 2%;
+	width: 45px;
+	cursor: pointer;
+}
+
+.ir-a-inicio{
+
+	color: black;
+	text-align: center;  
+	padding: 12px 20px ; 
+	font-size: 16px; 
+	/*text-decoration: none;*/
+	float: right;
+	margin: -3.3% 1%;
+	cursor: pointer;
+	/*background-color: red;*/
+	margin-top: -3.5%;
+
+}
+
+.barra-2{
+
+	width: 100%;
+	height: 7.5%;
+	/*background-color: lightgray;*/
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.list-1{
+	margin-left: 1%;
+
+}
+.li1{
+	display: inline-block;
+	margin-left: 0.5%;
+	margin-top: 0.8%;
+}
+#efect{
+	border-bottom: 1px solid black;
+	text-decoration: none;
+}
+
+
+
+.barra-2 li a{
+	margin-top: -6%;	
+	background-color:white;
+	color: gray;
+	text-decoration:none;
+	padding:10px 10px;
+	display:block;
+}
+
+.barra-2 li a:hover{
+	background-color: black;
+}
+
+.promociona-text{
+	margin-top: 2%;
+	/*background-color: red;*/
+	font-size: 15px;
+	display: inline-block;
+	width: 45%;
+	margin-left: 4%;
+
+}
+
+
+.barra-3{
+	width: 100%;
+	height:85%;
+	/*background-color: gray;*/
+
+
+}
+
+.cuadrado-1{
+	margin-top: 2%;
+	/*background-color: yellow;*/
+	width: 90%;
+	height: 80%;
+	margin-left: 4%;
+	position: relative;
+	font-size: 18px;
+	-webkit-box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
+	-moz-box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
+	box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
+	
+	border: 1px solid black; 
+}
+.info-p{
+	margin-left: 5%;
+	/*background-color: white;*/
+	width: 90%;
+	margin-top: 3%;
+	padding-top: 3%;
+
+}
+
+.categoria-producto{
+	margin-left: 5%;
+	margin-top: 7%;
+	/*	background-color: white;*/
+	width: 90%;
+	
+}
+.cat-p{
+	display: inline-block;
+
+
+}
+.categoria{
+	display: inline-block;
+	margin-left: 7%;
+
+}
+
+.cont-titulo{
+	display: inline-block;
+	width: 90%;
+	/*background-color: blue;*/
+	margin-left: 5%;
+	margin-top: 7%;
+
+}
+
+.tit{
+
+	display: inline-block;
+	font-size: 18px;
+	width: 	45%;
+
+}
+#titulo_anuncio{
+	width: 50%;
+	margin-left: -10%;
+
+}
+
+
+.desc-p{
+
+	display: inline-block;
+	font-size: 18px;
+	margin-right: 1%;
+	width: 40%;
+
+}
+
+#text-area{
+	display: flex;
+	width: 50%;
+
+
+}
+
+textarea{
+	margin-left: 38%; 
+	width: 150%;
+
+}
+
+.cont-descripcion{
+	display: inline-block;
+	width: 90%;
+	margin-top: 7%;
+	/*	background-color: red;*/
+	margin-left: 5%;
+}
+
+
+.sub-cuadrado{
+
+	/*	background-color: lightgray;*/
+	width: 50%;
+	height: 90%;
+}
+
+
+.sub-cuadrado2{
+	display: inline-block;
+	/*background-color: gray;*/
+	width: 50%;
+	height: 90%;
+	float: right;
+	margin-top: -33.7%;
+}
+
+
+.cont-precio{
+	display: inline-block;
+	width: 70%;
+	/*background-color: blue;*/
+	margin-left: 5%;
+	margin-bottom: 15%;
+	margin-top: 13.5%;
+
+}
+
+.pre{
+
+	display: inline-block;
+	font-size: 18px;
+	width: 30%;
+
+}
+
+#precio, #cantidad{
+	width: 45%;
+
+}
+
+.cont-cant{
+	display: inline-block;
+	width: 70%;
+	/*background-color: blue;*/
+	margin-left: 5%;
+
+
+	
+}
+
+.cant{
+
+	display: inline-block;
+	font-size: 18px;
+	width: 30%;
+
+}
+
+
+
+.cont-imagen{
+	display: inline-block;
+	width: 60%;
+	margin-top: 8%;
+	margin-left: 5%;
+}
+
+.select-img{
+
+	display: inline-block;
+	font-size: 18px;
+	margin-right: 1%;
+	width: 40%;
+}
+
+
+#texto{
+
+	text-align: center;
+}
+
+.subir_imagen{ 
+	display: inline-block;
+	height: 50px;
+	width:  60px; 
+	margin: 0%;
+	box-shadow: 0px 0px 2px 2px grey;
+	position: relative;
+	padding: 10px;
+}
+
+
+#input-seleccionar{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	opacity: 0;
+}
+
+/*Region y comuna css*/
+.barra-4{
+	width: 100%;
+	height:34%;
+	margin-top: -6%;
+	position: absolute;
+
+
+}
+
+.region{
+	margin-left: 5%;
+	margin-top: 7%;
+	/*	background-color: white;*/
+	width: 90%;
+	
+}
+.cat-r{
+	display: inline-block;
+
+}
+
+#select-region{
+
+	margin-left: 15%;
+}
+
+.comuna{
+	margin-left: 5%;
+	margin-top: 5%;
+	/*	background-color: white;*/
+	width: 90%;
+	
+}
+
+.cat-c{
+	display: inline-block;
+
+}
+
+#select-comuna{
+
+	margin-left: 13%;
+}
+
+
+.boton-promocionar{
+	/*background-color: red;*/
+	width: 100%;
+	height: 20%;
+	display: inline-block;
+	margin-top: 10%;
+}
+
+.btn {
+	cursor: pointer;
+	margin: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 22px;
+	transition: .3s;
+	display: inline-block;
+}
+
+
+.blue:hover {
+	background-color: black;
+	color: gray;
+}
+
+.btn:hover {
+	cursor:pointer;
+}
+.blue {
+	color: black;
+	border: 2px black solid;
+}
