@@ -92,12 +92,12 @@
 	        <i class="material-icons" id="icon_add">
                 add_circle
             </i>
-            <a href="publicar_producto_artesanal.html" id="text_add">Agregar producto</a>
+            <a href="publicar_producto_artesanal.php" style="color:white;" id="text_add">Agregar producto</a>
             
             <i class="material-icons" id="icon3">
                 add_circle
             </i>
-            <p  style="color: white;" id="text3">Actualizar stock</p>
+            <a href="actualizar_stock.php" style="color: white;" id="text3">Actualizar stock</a>
 	    </div>
 	    
 	    </div>
