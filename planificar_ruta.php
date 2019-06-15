@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Planificar Ruta</title>
@@ -19,7 +19,9 @@
             <img src="logo.png" alt="" class="logo">
         </a>
     </div>
-    <img src="perfil.jpg" alt="" class="perfil_imagen">
+        <a href="perfil_usuario.php">
+		    <img src="perfil.jpg" alt="" class="perfil_imagen">
+		</a>
     <div class="sesion_usuario">
         <center>
             Hola

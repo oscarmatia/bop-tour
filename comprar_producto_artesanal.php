@@ -27,9 +27,9 @@
 			</a>		
 				
 		</div>
-		
-		<img src="perfil.jpg" alt="" class="perfil_imagen">
-		
+		<a href="perfil_usuario.php">
+		    <img src="perfil.jpg" alt="" class="perfil_imagen">
+		</a>
 		<div class="sesion_usuario">
 				<center>
 				Hola 

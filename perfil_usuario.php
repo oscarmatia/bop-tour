@@ -23,7 +23,6 @@
 <?php
             echo $_SESSION['nombre_cliente'];
             echo ' ';
-            echo $_SESSION['apellido_cliente'];
 ?>
            !!
         </center>
