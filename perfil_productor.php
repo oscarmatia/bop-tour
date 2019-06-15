@@ -1,10 +1,5 @@
 <?php
-	include("connect.php");
-	$con= conectar();
-
-    $consulta = "SELECT * FROM productor";
-    $resultado = mysqli_query($con,$consulta);
-
+    session_start();
 ?>
 
 
@@ -13,11 +8,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Perfil Productor</title>
-    <link rel="stylesheet" href="productor.css">
+    <link rel="stylesheet" href="perfil_productor.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    
+    <script src="redireccion_cerrar_sesion.js"></script>
 </head>
 <body>
    <img src="camino_campo.jpg" alt="" class="imagen_fondo">
@@ -29,13 +24,11 @@
     <div class="sesion_usuario">
 				<center>
 				Hola 
-				<?php
-                    while($row = mysqli_fetch_assoc($resultado)){
-                       echo $row['nombre_productor']; 
-                        echo ' ';
-                       echo $row['apellido_productor']; 
-                    }     
-                ?>
+<?php
+                       echo $_SESSION['nombre_productor'];
+                       echo ' ';
+                       echo $_SESSION['apellido_productor'];    
+?>
                 !!
 				</center>
     </div>
@@ -56,25 +49,27 @@
         </i>
 	    <div class="nombre_productor">
 	    <center>
-	        <?php
-            
-            $consulta = "SELECT * FROM productor";
-            $resultado = mysqli_query($con,$consulta);
-            
-                    while($row = mysqli_fetch_assoc($resultado)){
-                       echo $row['nombre_productor']; 
+<?php
+                       echo $_SESSION['nombre_productor']; 
                         echo ' ';
-                       echo $row['apellido_productor']; 
-                    }     
-                ?>
+                       echo $_SESSION['apellido_productor'];   
+?>
                 
             <a href="editar_perfil.php" id="perfil">Editar perfil</a>
 	    </center>
 	    </div>
 	    <hr align="center" class="linea">
 	    <ul>
-	        <li class="lista">N° visitas: </li>
-            <li class="lista">N° compras: </li>
+	        <li class="lista">N° visitas: 
+<?php
+                echo  $_SESSION['num_visitas'];
+?>
+            </li>
+            <li class="lista">N° compras: 
+<?php
+                echo  $_SESSION['num_compras'];
+?>
+            </li>
 	    </ul>
 	</div>
 	<div class="derecha">
@@ -84,12 +79,12 @@
         <i class="material-icons" id="icon2">
             local_parking
         </i>
-        <p id="text1">Mis productos</p>
+        <p style="color: white;" id="text1">Mis productos</p>
         </div>
         <hr align="center" id="linea2">
         <div class="productos">
-            <p id="products">producto 1</p>
-            <p id="products">producto 2</p>
+            <p style="color: white;" id="products">producto 1</p>
+            <p style="color: white;" id="products">producto 2</p>
         </div>
         <br>
         
@@ -97,12 +92,12 @@
 	        <i class="material-icons" id="icon_add">
                 add_circle
             </i>
-            <p id="text_add">Agregar producto</p>
+            <a href="publicar_producto_artesanal.php" style="color:white;" id="text_add">Agregar producto</a>
             
             <i class="material-icons" id="icon3">
                 add_circle
             </i>
-            <p id="text3">Actualizar stock</p>
+            <a href="actualizar_stock.php" style="color: white;" id="text3">Actualizar stock</a>
 	    </div>
 	    
 	    </div>
@@ -113,20 +108,21 @@
             <i class="material-icons" id="icon2">
                 arrow_forward_ios
             </i>
-            <p id="text1">Tienda</p>
+            <p style="color: white;" id="text1">Tienda</p>
         </div>
         <hr align="center" class="linea2">
         
         <div class="tiendas">
-            
-            <p id="tiends">tienda 1</p>
+<?php
+            echo  $_SESSION['nombre_tienda'];
+?>
         </div>
         
         <div class="iconos2">
            <i class="material-icons" id="icon4">
                 add_circle
            </i>
-           <p id="text4">Publicar tienda</p>
+           <a href="publicar_tienda.php" id="text4">Publicar tienda</a>
             
         </div>
         
@@ -143,7 +139,6 @@
            <b>Siguenos</b>
      <center>
          
-     
          <a href="https://www.facebook.com/Bop-tour-391667081681891/?modal=admin_todo_tour" target="_blank">    <img src="fb.png" alt="" class="facebook">
          </a>
 				

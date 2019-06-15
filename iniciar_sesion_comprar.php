@@ -1,24 +1,22 @@
-<!--
-Iniciar Sesion productor
--->
-    
-
 <?php
+
 	include("connect.php");
 	$con= conectar();
 ?>
+
 
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Iniciar Sesion Productor</title>
+    <title>Login</title>
     
     <link rel="stylesheet" href="iniciar_sesion.css">
     
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
     
-    <script src="redireccion_iniciar_sesion_productor.js"></script>
+    <script src="redireccion_iniciar_sesion_comprar.js"></script>
+    <script src="redireccion_registro_comprar.js"></script>
     
   </head>
   
@@ -38,7 +36,7 @@ Iniciar Sesion productor
           <img src="perfil.jpg" alt="User">
           <h3>Inicio de Sesión</h3>
           
-           <form class="" action="validar_productor.php" method="post">
+           <form class="" action="validar_comprar.php" method="post">
             
             <p style="color: white">Email</p><br>
             <input class="inp" type="text" name="correo" value="">
@@ -54,9 +52,10 @@ Iniciar Sesion productor
             <input type="checkbox" style="width: 13px; height: 13px; padding: 0; margin:0; vertical-align: bottom; position: relative; top: -1px; *overflow: hidden;">
             No cerrar sesion
             </label>
-            <input class="boton" type="submit" name="inicio" value="Iniciar Sesión" onclick="sesion_iniciada_productor()">
+            <input class="boton" type="submit" name="inicio" value="Iniciar Sesión" onclick="sesion_iniciada_comprar()">
             
-          </form>   
+          </form>  
+          <input class="boton2" type="submit" name="Registro" value="Registrarme" onclick="redireccion_registro_comprar()" style="margin-left: 25%; margin-top: 1%;padding: 6px;">  
       </div>
       
     </div>

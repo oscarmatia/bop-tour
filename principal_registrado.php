@@ -30,9 +30,9 @@
 		<div class="sesion_usuario">
 				<center>
 				Hola 
-				<?php
-				echo $_SESSION['nombre_cliente'];
-			?>
+<?php
+				    echo $_SESSION['nombre_cliente'];
+?>
 				</center>
 		</div>
 		

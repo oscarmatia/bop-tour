@@ -27,9 +27,9 @@
 			</a>		
 				
 		</div>
-		
-		<img src="perfil.jpg" alt="" class="perfil_imagen">
-		
+		<a href="perfil_usuario.php">
+		    <img src="perfil.jpg" alt="" class="perfil_imagen">
+		</a>
 		<div class="sesion_usuario">
 				<center>
 				Hola 
@@ -59,7 +59,7 @@
 						
 									
 		<?php
-			$conexion = mysqli_connect("localhost", "root", "", "proyecto");
+			$conexion = mysqli_connect("localhost", "root", "", "bop");
 
 			$consulta = "SELECT DISTINCT nombre_producto FROM producto_artesanal ";
 					

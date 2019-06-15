@@ -253,6 +253,7 @@ input#botonsito:hover
     display: flex;
     width: 98%;
     height: 15%;
+    padding-left: 20%;
 }
 
 #icon_add{
@@ -292,11 +293,11 @@ input#botonsito:hover
 }
 
 #icon4{
-    margin-left: 50%;
+    margin-left: 35%;
 }
 #text4{
     color: wheat;
-    margin-left: 2%;
+    margin-left: 1%;
     margin-top: 0.6%;
 }
 

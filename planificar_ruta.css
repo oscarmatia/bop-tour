@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;	
+	overflow-y:hidden; 
+}
+
+.imagen_fondo{
+	position: absolute;
+	
+	width: 100%;
+	height: 100%;
+}
+
+.barra_navegacion{
+	background-color: black;
+	
+	position: absolute;
+	
+	height: 9%;
+	width: 100%;
+	
+	opacity: 0.4;
+}
+
+
+.boton{
+	position: absolute;
+	margin-top: 0.3%;
+	margin-left: 88%;
+}
+
+input#botonsito{
+	padding: 12px 30px 15px;
+	color: white;
+	font-size: 1em;
+	background-color: #c79d29;
+	border: 0px;
+	-webkit-border-radius:5px;
+	-webkit-box-shadow: 0px 4px 0px #a58325;
+	-webkit-transition: background-color .25s;
+}
+.logo
+{
+	position: absolute;
+	
+	height: 90%;
+	width: 3.5%;
+	
+	margin-left: 1%;
+	margin-top: 0.2%;
+}
+input#botonsito:hover{
+	background-color: #e3ae1a
+}
+.sesion_usuario{
+	position: absolute;
+	
+	color: white;
+	
+	height: 4.4%;
+	width: 13%;
+	
+	margin-left: 71%;
+	margin-top: 0.3%;
+	padding-top: 0.7%;
+}
+.perfil_imagen{
+	position: absolute;
+	background-color: azure;
+	
+	border-radius: 100%;
+	
+	height: 6%;
+	width: 3.3%;
+	
+	margin-left: 70%;
+	margin-top: 0.2%;
+}
+
+.contenedor_principal{
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    margin-top: 5.5%;
+    margin-left: 2.5%;
+    width: 95%;
+    height: 78%;
+    border-radius: 2%;
+}
+
+.seccion1{
+    width: 96%;
+    height: 10%;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.seccion2{
+    width: 96%;
+    height: 10%;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.footer{
+	background-color: wheat;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+	opacity: 0.6;
+}
+
+.siguenos{
+	font-size: 18px;
+    text-align: center;
+	color: dimgrey;
+    height: 100%;
+}
+
+.facebook{	
+    margin-bottom: 1.5%;
+	height: 50px;
+	width: 60px;
+}
+
+.instagram
+{
+    margin-bottom: 1.5%;
+	height: 50px;
+	width: 60px;
+
+}
+
+.twitter
+{
+	margin-bottom: 1.5%;
+	height: 40px;
+	width: 60px;
+
+}

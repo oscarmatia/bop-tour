@@ -17,6 +17,6 @@
 
 	$resultado = mysqli_query($conexion, $consulta);
 
-	header("Location: iniciar_sesion.php");
+	header("Location: iniciar_sesion_comprar.php");
 
 ?>
