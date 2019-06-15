@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
     
     <script src="redireccion_iniciar_sesion_comprar.js"></script>
-    <script src="redireccion_registro.js"></script>
+    <script src="redireccion_registro_comprar.js"></script>
     
   </head>
   

@@ -81,6 +81,9 @@
         <a href="resultados_planificar_ruta.php">
         <input type="buttom" value="Buscar" style="color: white; background-color: green; border: solid; border-color: green; text-align: center; margin-top: 15%; margin-left: 10%;">
         </a>
+        <a href="gestionar_tour.php">
+            <input type="button" value="Gestionar" style="color: white; background-color: blue; border: solid; border-color: blue; text-align: center; margin-top: 15%; margin-left: 50%; padding-left: 4%; padding-right: 5%;padding-top: 2%; padding-bottom: 2%;">
+        </a>
     </div>
     <footer class="footer">
         <div class="siguenos">

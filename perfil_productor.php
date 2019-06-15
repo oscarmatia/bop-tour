@@ -92,7 +92,7 @@
 	        <i class="material-icons" id="icon_add">
                 add_circle
             </i>
-            <p style="color: white;" id="text_add">Agregar producto</p>
+            <a href="publicar_producto_artesanal.html" id="text_add">Agregar producto</a>
             
             <i class="material-icons" id="icon3">
                 add_circle

@@ -36,7 +36,7 @@
          <br>
           <h3>Registro de nuevo cliente</h3>
           
-           <form class="" action="insertar_registro.php" method="post">
+           <form class="" action="insertar_registro_visitar.php" method="post">
            
             <p style="color: white">Nombre</p><br>
             <input class="inp" type="text" name="nombre_cliente" value="">
