@@ -1,11 +1,13 @@
 html {
-	font-family: Roboto Condensed;
+	font-family: Josefin Sans;
 }
 
 
 html, body {
 	height: 100%;
 	background-color: white;
+	color: white;
+	font-family: Josefin Sans;
 }
 
 * {
@@ -26,9 +28,10 @@ input[type=text], select,textarea{
 .barra-1{ /*barra de navegacion, iniciar sesion*/
 	width: 100%;
 	height: 10%;
-	background-color: gray;
+	/*background-color: gray;*/
 	display: inline-block;
 	box-shadow: inherit;
+	position: relative;
 }
 
 /*
@@ -84,6 +87,7 @@ input[type=text], select,textarea{
 	/*background-color: lightgray;*/
 	display: inline-block;
 	border: 1px solid black;
+	position: relative;
 }
 
 .list-1{
@@ -145,7 +149,7 @@ input[type=text], select,textarea{
 	-webkit-box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
 	-moz-box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
 	box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
-	
+	color: white;
 	border: 1px solid black; 
 }
 .info-p{
@@ -313,8 +317,8 @@ textarea{
 
 .subir_imagen{ 
 	display: inline-block;
-	height: 50px;
-	width:  60px; 
+	height: 60px;
+	width:  100px; 
 	margin: 0%;
 	box-shadow: 0px 0px 2px 2px grey;
 	position: relative;
@@ -385,6 +389,7 @@ textarea{
 	height: 20%;
 	display: inline-block;
 	margin-top: 10%;
+	margin-left: -7%;
 }
 
 .btn {
@@ -396,6 +401,7 @@ textarea{
 	font-size: 22px;
 	transition: .3s;
 	display: inline-block;
+	position: absolute;
 }
 
 
@@ -408,6 +414,14 @@ textarea{
 	cursor:pointer;
 }
 .blue {
-	color: black;
-	border: 2px black solid;
+	color: white;
+	border: 2px white solid;
+}
+
+
+.imagen-campo{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	margin-left: -1%;
 }
