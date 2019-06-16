@@ -34,6 +34,7 @@
 <?php
 				echo $_SESSION['nombre_cliente']
 ?>
+                !!
 				</center>
 		</div>
 		
@@ -49,14 +50,10 @@
 			<center><b>Productos Artesanales</b></center>
 		</div>
 		
-		<div class="que_quieres_hacer_hoy">		
-		</div>
-		
 		<form action="buscar_productos_artesanales.php" method="post" class="buscar">		    
-				<input type="Buscar" placeholder="Buscar..." class="inp" name="busqueda">
-						
-									
-		<?php
+				<input type="Buscar" placeholder="Buscar..." class="inp" name="busqueda">						
+		</form>
+<?php
 			$conexion = mysqli_connect("localhost", "root", "", "bop");
 
 			$consulta = "SELECT DISTINCT nombre_producto FROM producto_artesanal ";
@@ -66,21 +63,17 @@
 
 			while($fila = mysqli_fetch_array($resultado))
 			{
-				?>
+?>
 				<br>
 				<input type="radio" name="producto_artesanal"> 
-		
-				<?php
-		
+<?php
 				echo " $fila[nombre_producto]  <br> ";
-				?>
-				
+?>				
 				<img src="<?php print $fila[imagen] ?>" >
-				
-				
-	<?php }	?>	
+<?php 
+            }	
+?>	
 
-		</form>
 
 				
 		<footer class="footer"></footer>

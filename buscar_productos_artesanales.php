@@ -18,5 +18,7 @@
 				
 		echo "<td> Precio Unitario:  $fila[precio] <br><br>";
 	}
-
+    
+    session_start();
+    header("location: comprar_producto_artesanal.php");
 ?>
