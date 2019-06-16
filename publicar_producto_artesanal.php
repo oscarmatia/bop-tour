@@ -1,3 +1,9 @@
+<?php
+session_start();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -33,8 +39,8 @@
 		<div>
 			<ul class="list-1">
 
-				<li class="li1" id="efect"><a href="<!-- php de mis productos xD -->">Publicar producto artesanal</a></li>
-				<li class="li1" id="efect"><a href="">Mis productos</a></li>
+				<li class="li1" id="efect"><a href="publicar_producto_artesanal.php">Publicar producto artesanal</a></li>
+				<li class="li1" id="efect"><a href="mis_productos.php">Mis productos</a></li>
 
 			</ul>
 		</div>	
@@ -45,10 +51,10 @@
 
 	<div class="promociona-text">
 
-		<h1>Promociona tu producto</h1>
+		<h1 style="color: white;">Promociona tu producto</h1>
 		<hr width="55%;">	
 
-		<h3 style="margin-top: 3%;">Tu producto será publicado si cumple con las reglas de nuestro sistema</h3>
+		<h3 style="margin-top: 3%; color: white;">Tu producto será publicado si cumple con las reglas de nuestro sistema</h3>
 	</div>
 
 
@@ -212,7 +218,7 @@
 
 	<div class="boton-promocionar">
 		<center>
-			<a class="btn blue">Promocionar</a>
+			<a href="ventana_resultado_producto.php" onclick="guardar_producto.php" class="btn blue">Promocionar</a>
 		</center>
 
 	</div>
