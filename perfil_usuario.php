@@ -14,7 +14,8 @@
 <body>
     <img src="camino_campo.jpg" alt="" class="imagen_fondo">
     <div class="barra_navegacion">
-        <img src="logo.png" alt="" class="logo">
+        <a href="principal_registrado.php"><img src="logo.png" alt="" class="logo">
+        </a>
     </div>
     <img src="perfil.jpg" alt="" class="perfil_imagen">
     <div class="sesion_usuario">
@@ -60,7 +61,26 @@
        <hr align="center" class="linea">
         </div>
         <div class="derecha">
+            <p style="color: white; margin-top: 2%; margin-left: 5%;">Mis Rutas</p>
+            <hr style="color: black; margin-top: 1%;">
+            <p style="color: white; margin-top: 2%; margin-left: 5%;">Ruta 1 <a href="compartir_ruta.php"><i class="material-icons" style="color:white; float: right; margin-right: 8%;">
+                share
+            </i>
+            </a>
+            </p>
             
+            <p style="color: white; margin-top: 2%; margin-left: 5%;">Ruta 2
+            <a href="compartir_ruta.php"><i class="material-icons" style="color:white; float: right; margin-right: 8%;">
+                share
+            </i>
+            </a>
+            </p>
+            
+        </div>
+        <div class="derecha_boton">
+           <a href="promociones.php">
+            <input type="button" id="boton_canjear" value="Canjear Promociones">
+           </a>
         </div>
     </div>
     <footer class="footer">
