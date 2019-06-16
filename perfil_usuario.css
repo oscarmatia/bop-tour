@@ -167,3 +167,34 @@ input#botonsito:hover
     border-style:solid;
     border-radius: 5%;
 }
+
+.perfil_imagen2{
+    position: absolute;
+    border-radius: 40%;
+    margin-left: 12%;
+    margin-top: 1%;
+}
+.nombre_cliente{
+    position: absolute;
+    color: black;
+    margin-top: 16%;
+    width: 45%;
+}
+#perfil{
+    margin-left: 15%;
+    color: white;
+}
+#icon1{
+    position: absolute;
+    margin-left: 28%;
+    margin-top: 13%;
+}
+.linea{
+    margin-top: 45%;
+    border-color: black;
+}
+.lista{
+    padding-top: 5%;
+    color: wheat;
+    margin-top: 35%;
+}

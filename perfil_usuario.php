@@ -34,7 +34,30 @@
     </form>
     <div class="contenedor">
         <div class="izquierda">
-            
+            <img src="perfil.jpg" alt="" class="perfil_imagen2">
+	    <i class="material-icons" id="icon1" onclick="subir_foto()">
+                add_circle_outline
+        </i>
+	    <div class="nombre_cliente">
+	    <center>
+	            <p style="color:white;margin-left: 16%; float:left;">
+<?php
+                echo $_SESSION['nombre_cliente']; 
+                echo ' ';
+?>
+                </p>                
+            <a href="editar_perfil.php" id="perfil">Editar perfil</a>
+        </center>
+	    </div>
+      <ul class="lista">
+          <li style="margin-top:2%;">Puntos acumulados: 
+<?php
+              echo $_SESSION['puntos'];
+?>      
+          </li>
+          <li style="margin-top:2%;">Puntos vencidos: 0</li>
+      </ul>
+       <hr align="center" class="linea">
         </div>
         <div class="derecha">
             
