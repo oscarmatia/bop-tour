@@ -8,15 +8,13 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8">
-		<title>comprar_producto_artesanal</title>
+		<title>Comprar producto artesanal</title>
 		<link rel="stylesheet" href="comprar_producto_artesanal.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="buscar_productos_artesanales.php">
 		
 		<script src="redireccion_cerrar_sesion.js"></script>
-		
-		
-		
+				
 	</head>
 
 	<body>
@@ -33,9 +31,9 @@
 		<div class="sesion_usuario">
 				<center>
 				Hola 
-				<?php
+<?php
 				echo $_SESSION['nombre_cliente']
-			?>
+?>
 				</center>
 		</div>
 		
@@ -55,7 +53,7 @@
 		</div>
 		
 		<form action="buscar_productos_artesanales.php" method="post" class="buscar">		    
-						<input type="Buscar" placeholder="Buscar..." class="inp" name="busqueda">
+				<input type="Buscar" placeholder="Buscar..." class="inp" name="busqueda">
 						
 									
 		<?php
