@@ -45,7 +45,7 @@
             <p style="color: white">Contraseña</p> <br>
             <input class="inp" type="password" name="password" value="">
             <br>
-            <a href="" class="he">He olvidado mi contraseña</a>
+            <a href="olvidar_contraseña.php" class="he">He olvidado mi contraseña</a>
             <br>
             
             <label for="" style="display: block; padding-left: 15px; text-indent: -15px;color: white; margin-top: 3%; margin-left: 25%;">
