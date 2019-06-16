@@ -17,6 +17,9 @@
 
 	session_start();
 	$_SESSION['nombre_cliente'] = $rows['nombre_cliente'];
+    $_SESSION['apellido_cliente'] = $rows['apellido_cliente'];
+    $_SESSION['puntos'] = $rows['puntos'];
+
 	header("Location: principal_registrado_comprar.php");
 
 	if($filas > 0)

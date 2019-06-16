@@ -28,7 +28,7 @@ session_start();
 				<img src="logo.png">
 			</div>
 
-			<a class="ir-a-inicio" href="principal.php">Ir a inicio</a>
+			<a class="ir-a-inicio" href="perfil_productor.php">Ir a perfil</a>
 
 		</div>
 

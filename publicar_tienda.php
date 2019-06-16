@@ -77,8 +77,8 @@
                 
               </form>
              </div>
-             <input class="boton2" type="submit" name="Publicar" value="Publicar Tienda" style="padding: 1%; margin: 4%; margin-left: 45%;"> 
-             
+             <a href="insertar_tienda.php"><input class="boton2" type="submit" name="Publicar" value="Publicar Tienda" style="padding: 1%; margin: 4%; margin-left: 45%;"> 
+             </a>
             </form>
                        
         </div>

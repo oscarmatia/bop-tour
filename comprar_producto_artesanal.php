@@ -8,15 +8,13 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8">
-		<title>comprar_producto_artesanal</title>
+		<title>Comprar producto artesanal</title>
 		<link rel="stylesheet" href="comprar_producto_artesanal.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="buscar_productos_artesanales.php">
 		
 		<script src="redireccion_cerrar_sesion.js"></script>
-		
-		
-		
+				
 	</head>
 
 	<body>
@@ -33,9 +31,10 @@
 		<div class="sesion_usuario">
 				<center>
 				Hola 
-				<?php
+<?php
 				echo $_SESSION['nombre_cliente']
-			?>
+?>
+                !!
 				</center>
 		</div>
 		
@@ -51,14 +50,10 @@
 			<center><b>Productos Artesanales</b></center>
 		</div>
 		
-		<div class="que_quieres_hacer_hoy">		
-		</div>
-		
 		<form action="buscar_productos_artesanales.php" method="post" class="buscar">		    
-						<input type="Buscar" placeholder="Buscar..." class="inp" name="busqueda">
-						
-									
-		<?php
+				<input type="Buscar" placeholder="Buscar..." class="inp" name="busqueda">						
+		</form>
+<?php
 			$conexion = mysqli_connect("localhost", "root", "", "bop");
 
 			$consulta = "SELECT DISTINCT nombre_producto FROM producto_artesanal ";
@@ -68,21 +63,17 @@
 
 			while($fila = mysqli_fetch_array($resultado))
 			{
-				?>
+?>
 				<br>
 				<input type="radio" name="producto_artesanal"> 
-		
-				<?php
-		
+<?php
 				echo " $fila[nombre_producto]  <br> ";
-				?>
-				
+?>				
 				<img src="<?php print $fila[imagen] ?>" >
-				
-				
-	<?php }	?>	
+<?php 
+            }	
+?>	
 
-		</form>
 
 				
 		<footer class="footer"></footer>

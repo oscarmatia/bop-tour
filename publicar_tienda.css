@@ -126,3 +126,10 @@ input#botonsito:hover{
 	height: 40px;
 	width: 60px;
 }
+
+.boton2{
+    background-color: green;
+}
+.boton2:hover {
+    background-color: darkgreen;
+}
