@@ -46,7 +46,7 @@
 	<div class="promociona-text">
 
 		<h1>Promociona tu producto</h1>
-		<hr width="51%;">	
+		<hr width="55%;">	
 
 		<h3 style="margin-top: 3%;">Tu producto será publicado si cumple con las reglas de nuestro sistema</h3>
 	</div>

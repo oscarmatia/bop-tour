@@ -32,6 +32,7 @@ input[type=text], select,textarea{
 	display: inline-block;
 	box-shadow: inherit;
 	position: relative;
+
 }
 
 /*
@@ -425,4 +426,5 @@ textarea{
 	height: 100%;
 	position: fixed;
 	margin-left: -1%;
+	margin-top: -1%;
 }
