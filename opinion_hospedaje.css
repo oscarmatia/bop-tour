@@ -1,0 +1,386 @@
+*{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;	
+	overflow-y:hidden; 
+
+	color: white;
+
+
+}
+
+.imagen_fondo{
+	position: absolute;
+	
+	width: 100%;
+	height: 100%;
+}
+
+.barra_navegacion{
+	background-color: black;
+	
+	position: absolute;
+	
+
+	height: 9%;
+
+	height: 8%;
+
+	width: 100%;
+	
+	opacity: 0.4;
+}
+
+
+.boton{
+	position: absolute;
+	margin-top: 0.3%;
+	margin-left: 88%;
+}
+
+input#botonsito{
+	padding: 12px 30px 15px;
+	color: white;
+	font-size: 1em;
+	background-color: #c79d29;
+	border: 0px;
+	-webkit-border-radius:5px;
+	-webkit-box-shadow: 0px 4px 0px #a58325;
+	-webkit-transition: background-color .25s;
+}
+.logo
+{
+	position: absolute;
+	
+	height: 90%;
+	width: 3.5%;
+	
+	margin-left: 1%;
+	margin-top: 0.2%;
+}
+input#botonsito:hover{
+	background-color: #e3ae1a
+}
+.sesion_usuario{
+	position: absolute;
+	
+	color: white;
+	
+	height: 4.4%;
+	width: 13%;
+	
+
+	margin-left: 71%;
+
+	margin-left: 72%;
+
+	margin-top: 0.3%;
+	padding-top: 0.7%;
+}
+.perfil_imagen{
+	position: absolute;
+	background-color: azure;
+	
+	border-radius: 100%;
+	
+	height: 6%;
+	width: 3.3%;
+	
+	margin-left: 70%;
+	margin-top: 0.2%;
+}
+
+
+.contenedor_principal{
+	background-color: black;
+	opacity: 0.7;
+	position: absolute;
+	margin-top: 5.5%;
+	margin-left: 2.5%;
+	width: 95%;
+	height: 85%;
+	border-radius: 2%;
+}
+
+.seccion1{
+	width: 35%;
+	height: 75%;
+	margin-top: 1%;
+	margin-left: 7%;
+	/*background-color: red;*/
+	-webkit-box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
+	-moz-box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
+	box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
+	color: white;
+	border: 1px solid white; 
+}
+
+.seccion2{
+	width: 35%;
+	height: 75%;
+	margin-top: -31.3%;
+	margin-left: 1%;
+	margin-right: 11%;
+	/*	background-color: green;*/
+	display: inline-block;
+	float: right;
+	-webkit-box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
+	-moz-box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
+	box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
+	color: white;
+	border: 1px solid white; 
+	overflow: scroll;
+
+
+}
+
+
+
+/*GESTIONAR TOURXd*/
+
+
+.cont-dest{
+	display: inline-block;
+	width: 90%;
+	height: 15%;
+	/*background-color: blue;*/
+	margin-left: 5%;
+	margin-top: 4%;
+
+}
+
+.des{
+
+	display: inline-block;
+	font-size: 18px;
+	width: 	25%;
+	margin-top: 2%;
+	/*background-color: gray;*/
+
+}
+#destino{
+	width: 40%;
+	margin-left:20%;
+	/*background-color: lightgray;*/
+	display: inline-block;
+	float: right;
+	margin-top: -5%;
+	margin-right: 24%;
+
+}
+
+
+.mapa{
+	margin-left: 5%;
+	position: relative;
+}
+
+
+
+.cont-fecha_ida{
+	display: inline-block;
+	width: 90%;
+	height: 15%;
+	/*background-color: blue;*/
+	margin-left: 5%;
+
+
+}
+
+.fe{
+
+	display: inline-block;
+	font-size: 18px;
+	width: 	25%;
+	margin-top: 2%;
+	/*background-color: gray;*/
+
+}
+#date{
+	width: 30%;
+	margin-left:20%;
+	background-color: lightgray;
+	display: inline-block;
+	float: right;
+	margin-top: -5%;
+	margin-right: 35%;
+
+}
+
+
+.cont-fecha_vuelta{
+	display: inline-block;
+	width: 90%;
+	height: 15%;
+	/*background-color: blue;*/
+	margin-left: 5%;
+	margin-top: 3%;
+
+
+}
+
+.fe2{
+
+	display: inline-block;
+	font-size: 18px;
+	width: 	25%;
+	margin-top: 2%;
+	/*background-color: gray;*/
+
+}
+
+.cont-cant-g{
+	display: inline-block;
+	width: 70%;
+	/*background-color: blue;*/
+	margin-left: 5%;
+	margin-top: 3%;
+
+
+	
+}
+
+.cant2{
+
+	display: inline-block;
+	font-size: 18px;
+	width: 30%;
+
+}
+
+#cantidad2{
+	width: 39%;
+	float: right;
+	margin-right: 16%;
+}
+
+input{
+	color: black;
+}
+
+
+/*Crigica opinion sugerencia*/
+
+.tipo{
+	margin-left: 5%;
+	margin-top: 7%;
+	width: 70%;
+	
+}
+.p-tipo{
+	display: inline-block;
+
+}
+
+#select-tipo{
+	float: right;
+	margin-right: 19%;
+	margin-top: -1%;
+}
+
+/*Clasificación*/
+
+#form {
+	width: 250px;
+	margin: 0 auto;
+	height: 50px;
+}
+
+#form p {
+	text-align: center;
+}
+
+#form label {
+	font-size: 20px;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+label {
+	color: grey;
+}
+
+.clasificacion {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+	color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+	color: orange;
+}
+
+
+.p-class{
+	display: inline-block;
+
+}
+
+.clasificacion{
+	margin-right: 47%;
+	/*background-color: blue;*/
+	width: 20%;
+	float: right;
+}
+
+.contenedor-clasificacion{
+	/*background-color: green;*/
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+
+
+
+.cont-descripcion{
+	margin-top: 5%;
+	margin-left: 5%;
+	/*background-color: gray;*/
+}
+
+.desc-p{
+	width: 29%;
+	/*background-color: blue;*/
+}
+
+textarea{
+	margin-left: 40%; 
+	width: 50%;
+	float: right;
+	margin-top: -5%;
+	margin-right: 10%;
+
+}
+
+
+.opinion{
+
+	width: 70%;
+	height: 30%;
+	background-color: white;
+	margin-left: 5%;
+	margin-top: 5%;
+	-webkit-box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
+	-moz-box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
+	box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
+	color: white;
+	border: 1px solid white; 
+
+}
+
+
+.perfil_b{
+
+	background-color: azure;
+	border-radius: 100%;
+	height: 20%;
+	width: 20%;
+	margin-top:15%;
+	margin-left: 1%;
+
+}
