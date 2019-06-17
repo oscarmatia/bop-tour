@@ -59,7 +59,7 @@
 			</center>
 		</div>	
 				
-		<footer class="footer"></footer>
+		<footer class="footer">
 		<div class="central">
 			
 				<div class="siguenos">
@@ -76,6 +76,7 @@
 				<a href="https://twitter.com/BopTour" target="_blank">
 					<img src="twitter.png" alt="" class="twitter">
 				</a>
-		</div>		
+		</div>	
+		</footer>	
 	</body>
 </html>

@@ -17,11 +17,7 @@ session_start();
 
 	<img class="imagen-campo" src="camino_campo.jpg">
 
-
 	<div class="barra-1">
-
-
-
 		<div class="iniciar-sesion">
 
 			<div class="logo">
