@@ -89,7 +89,7 @@
 	</div>
 </div>
 
-<a  href="gestionar_tour.php">
+<a  href="">
 	<input type="button" value="Gestionar" style="color: white; background-color: green; border: solid; border-color: green; text-align: center; margin-top: 12%; margin-left: 50%; padding-left: 4%; padding-right: 5%;padding-top: 2%; padding-bottom: 2%; float: right; margin-right: 36%;">
 </a>
 
