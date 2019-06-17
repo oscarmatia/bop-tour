@@ -120,186 +120,126 @@ input#botonsito:hover{
 	float: right;
 }
 
-.footer{
-	background-color: wheat;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 10%;
 
-	.footer{
-		background-color: wheat;
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		height: 10%;
 
-		opacity: 0.6;
-	}
+/*GESTIONAR TOURXd*/
 
-	.siguenos{
-		font-size: 18px;
 
-		text-align: center;
-		color: dimgrey;
-		height: 100%;
-	}
+.cont-dest{
+	display: inline-block;
+	width: 90%;
+	height: 15%;
+	/*background-color: blue;*/
+	margin-left: 5%;
+	margin-top: 4%;
 
-	.facebook{	
-		margin-bottom: 1.5%;
+}
 
-		text-align: center;
-		color: dimgrey;
-		height: 100%;
-	}
+.des{
 
-	.facebook{	
-		margin-bottom: 1.5%;
+	display: inline-block;
+	font-size: 18px;
+	width: 	25%;
+	margin-top: 2%;
+	/*background-color: gray;*/
 
-		height: 50px;
-		width: 60px;
-	}
+}
+#destino{
+	width: 40%;
+	margin-left:20%;
+	/*background-color: lightgray;*/
+	display: inline-block;
+	float: right;
+	margin-top: -5%;
+	margin-right: 24%;
 
-	.instagram
-	{
+}
 
-		margin-bottom: 1.5%;
 
-		margin-bottom: 1.5%;
-
-		height: 50px;
-		width: 60px;
-
-	}
-
-	.twitter
-	{
-		margin-bottom: 1.5%;
-		height: 40px;
-		width: 60px;
-
-	}
+.mapa{
+	margin-left: 5%;
+	position: relative;
+}
 
 
 
-	/*GESTIONAR TOURXd*/
+.cont-fecha_ida{
+	display: inline-block;
+	width: 90%;
+	height: 15%;
+	/*background-color: blue;*/
+	margin-left: 5%;
 
 
-	.cont-dest{
-		display: inline-block;
-		width: 90%;
-		height: 15%;
-		/*background-color: blue;*/
-		margin-left: 5%;
-		margin-top: 4%;
+}
 
-	}
+.fe{
 
-	.des{
+	display: inline-block;
+	font-size: 18px;
+	width: 	25%;
+	margin-top: 2%;
+	/*background-color: gray;*/
 
-		display: inline-block;
-		font-size: 18px;
-		width: 	25%;
-		margin-top: 2%;
-		/*background-color: gray;*/
+}
+#date{
+	width: 30%;
+	margin-left:20%;
+	background-color: lightgray;
+	display: inline-block;
+	float: right;
+	margin-top: -5%;
+	margin-right: 35%;
 
-	}
-	#destino{
-		width: 40%;
-		margin-left:20%;
-		/*background-color: lightgray;*/
-		display: inline-block;
-		float: right;
-		margin-top: -5%;
-		margin-right: 24%;
-
-	}
+}
 
 
-	.mapa{
-		margin-left: 5%;
-		position: relative;
-	}
+.cont-fecha_vuelta{
+	display: inline-block;
+	width: 90%;
+	height: 15%;
+	/*background-color: blue;*/
+	margin-left: 5%;
+	margin-top: 3%;
 
 
+}
 
-	.cont-fecha_ida{
-		display: inline-block;
-		width: 90%;
-		height: 15%;
-		/*background-color: blue;*/
-		margin-left: 5%;
+.fe2{
 
+	display: inline-block;
+	font-size: 18px;
+	width: 	25%;
+	margin-top: 2%;
+	/*background-color: gray;*/
 
-	}
+}
 
-	.fe{
-
-		display: inline-block;
-		font-size: 18px;
-		width: 	25%;
-		margin-top: 2%;
-		/*background-color: gray;*/
-
-	}
-	#date{
-		width: 30%;
-		margin-left:20%;
-		background-color: lightgray;
-		display: inline-block;
-		float: right;
-		margin-top: -5%;
-		margin-right: 35%;
-
-	}
+.cont-cant-g{
+	display: inline-block;
+	width: 70%;
+	/*background-color: blue;*/
+	margin-left: 5%;
+	margin-top: 3%;
 
 
-	.cont-fecha_vuelta{
-		display: inline-block;
-		width: 90%;
-		height: 15%;
-		/*background-color: blue;*/
-		margin-left: 5%;
-		margin-top: 3%;
+	
+}
 
+.cant2{
 
-	}
+	display: inline-block;
+	font-size: 18px;
+	width: 30%;
 
-	.fe2{
+}
 
-		display: inline-block;
-		font-size: 18px;
-		width: 	25%;
-		margin-top: 2%;
-		/*background-color: gray;*/
+#cantidad2{
+	width: 39%;
+	float: right;
+	margin-right: 16%;
+}
 
-	}
-
-	.cont-cant-g{
-		display: inline-block;
-		width: 70%;
-		/*background-color: blue;*/
-		margin-left: 5%;
-		margin-top: 3%;
-
-
-		
-	}
-
-	.cant2{
-
-		display: inline-block;
-		font-size: 18px;
-		width: 30%;
-
-	}
-
-	#cantidad2{
-		width: 39%;
-		float: right;
-		margin-right: 16%;
-	}
-
-	input{
-		color: black;
-	}
+input{
+	color: black;
+}
