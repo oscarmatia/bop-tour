@@ -9,7 +9,7 @@
 	<meta charset="UTF-8">
 	<title>Comprar Producto</title>
 	<link rel="stylesheet" href="principal_registrado_comprar.css">
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<script src="principal_registrado.js"> </script>
 	<script src="redireccion_cerrar_sesion.js"></script>
 	<link rel="stylesheet" href="buscar_productos_artesanales.php">
@@ -51,8 +51,8 @@
 			<div class="box">
   				<div class="container-4">
    				
-   					<form action="buscar_productos_artesanales.php">
-   						<input type="search" name="busqueda" id="search" placeholder="Search..." />
+   					<form action="buscar_productos_artesanales.php" method="post">
+   						<input type="search" name="busqueda" id="search" placeholder="Search...">
    					</form>
    				
     				
@@ -62,7 +62,7 @@
 	</center>
 	
 
-?>		
+?>			
 	
 	
 	<footer class="footer"></footer>
