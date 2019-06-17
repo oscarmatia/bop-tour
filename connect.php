@@ -1,5 +1,6 @@
 <?php
 
+
 	function conectar()
 	{
 		$user = "root";
@@ -13,4 +14,7 @@
 		return $con;
 	}
 
+
 ?>
+
+

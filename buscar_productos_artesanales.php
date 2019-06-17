@@ -1,24 +1,33 @@
 <?php
 
-	$busqueda = $_POST['busqueda'];
-
-	$conexion = mysqli_connect("localhost", "root", "", "bop");
-
-	$consulta = "SELECT * FROM producto_artesanal WHERE nombre_producto='$busqueda' ";
-					
-	$resultado = mysqli_query($conexion, $consulta);
-				
-	while($fila = mysqli_fetch_array($resultado))
+	function mostrar_buscado()
 	{
-		echo "<li>Producto:   $fila[nombre_producto] <br> ";
+		$busqueda = $_POST['busqueda'];
+
+		$conexion = mysqli_connect("localhost", "root", "", "bop-tour");
+
+		$consulta = "SELECT * FROM producto_artesanal WHERE nombre_producto like '%".$busqueda."%' ";
+
+		$resultado = mysqli_query($conexion, $consulta);
 		
-		echo "<td> Descripcion:  $fila[descripcion] <br>";
-			
-		echo " <td>  Stock: $fila[cantidad] <br>";
-				
-		echo "<td> Precio Unitario:  $fila[precio] <br><br>";
+		echo $busqueda;
+		echo "<br>";
+		echo $resultado;
+
+		while($fila = mysqli_fetch_array($resultado))
+		{
+			echo "<li>Producto:   $fila[nombre_producto] <br> ";
+
+			echo "<td> Descripcion:  $fila[descripcion] <br>";
+
+			echo " <td>  Stock: $fila[cantidad] <br>";
+
+			echo "<td> Precio Unitario:  $fila[precio] <br><br>";
+		}
+
+		session_start();
+		header("location: principañ_registrado_comprar.php");
 	}
-    
-    session_start();
-    header("location: comprar_producto_artesanal.php");
+
+		
 ?>
