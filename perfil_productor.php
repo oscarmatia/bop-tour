@@ -1,5 +1,6 @@
 <?php
     session_start();
+
 ?>
 
 
@@ -49,12 +50,13 @@
         </i>
 	    <div class="nombre_productor">
 	    <center>
+	    <b style="color:white;">
 <?php
                        echo $_SESSION['nombre_productor']; 
                         echo ' ';
                        echo $_SESSION['apellido_productor'];   
 ?>
-                
+        </b>   
             <a href="editar_perfil.php" id="perfil">Editar perfil</a>
 	    </center>
 	    </div>
@@ -113,16 +115,19 @@
         <hr align="center" class="linea2">
         
         <div class="tiendas">
+        <b style="color:white;">
 <?php
             echo  $_SESSION['nombre_tienda'];
-?>
+?>       
+        </b>
         </div>
         
         <div class="iconos2">
-           <i class="material-icons" id="icon4">
+              <a href='publicar_tienda.php?ID_productor=".$row["ID_productor"]."'>
+               <i class="material-icons" id="icon4">
                 add_circle
-           </i>
-           <a href="publicar_tienda.php" id="text4">Publicar tienda</a>
+               </i>
+              Publicar tienda</a> 
             
         </div>
         

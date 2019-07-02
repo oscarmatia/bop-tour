@@ -21,6 +21,7 @@
     $_SESSION['apellido_productor'] = $rows['apellido_productor'];
     $_SESSION['num_visitas'] = $rows['num_visitas'];
     $_SESSION['num_compras'] = $rows['num_compras'];
+    $_SESSION['ID_productor'] = $rows['ID_productor'];
 
 	header("Location: perfil_productor.php");
 
