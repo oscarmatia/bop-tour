@@ -4,11 +4,11 @@
     session_start();
     $con = conectar();
     
-    $ID_productor = $_SESSION['ID_productor'];
+    $ID_productor = $_SESSION["ID_productor"];
 
 	$nombre_tienda = $_POST["nombre_tienda"];
 	$ubicacion = $_POST["ubicacion"];
-	$rubro = $_POST["rubro"];
+	$rubro = $_GET["rubro"];
 
 
 	$consulta21 = "INSERT INTO tienda VALUES 

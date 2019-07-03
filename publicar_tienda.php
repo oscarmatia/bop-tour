@@ -1,7 +1,34 @@
 <?php
+<<<<<<< HEAD
+    session_start();
+    $conn = mysqli_connect("localhost", "root", "", "bop");
+
+    $ID_productor = $_POST['ID_productor'];
+
+    $consulta20 =  "SELECT * FROM productor WHERE ID_productor='$ID_productor'";
+
+    $resultado20 = mysqli_query($conn, $consulta20);
+
+    while($row = mysqli_fetch_assoc($resultado20)){
+        
+        $ID_productor = $row["ID_productor"];
+        $nombre_productor = $row["nombre_productor"];
+        $apellido_productor = $row["apellido_productor"];
+        $rut = $row["rut"];
+        $correo = $row["correo"];
+        $password = $row["password"];
+        $sexo = $row["sexo"];
+        $direccion = $row["direccion"];
+        $fecha_nacimiento = $row["fecha_nacimiento"];
+        $num_visitas = $row["num_visitas"];
+        $num_compras = $row["num_compras"];
+        
+    }
+=======
     require('connect.php');
     $con= conectar();
 	session_start();
+>>>>>>> 23cb626a34941820e449627b2b7553830d652ecd
 ?>
 
 <!DOCTYPE html>
