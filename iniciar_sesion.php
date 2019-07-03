@@ -61,6 +61,8 @@ Iniciar Sesion productor
       
     </div>
     
+    
+    
     <footer class="footer"></footer>
 		<div class="central">
 			
@@ -81,5 +83,4 @@ Iniciar Sesion productor
 		</div>	
     
   </body>
-
 </html>

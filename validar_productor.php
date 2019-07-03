@@ -26,8 +26,7 @@
 
 	$row = mysqli_num_rows($resultado3);
     
-    $consulta4 = "SELECT * FROM tienda WHERE ID_productor ='$_SESSION['ID_productor']' ";
-    $resultado4 = mysqli_query($con, $consulta4);
+
     
     while($row2 = mysqli_fetch_assoc($resultado4)){
         $nombre_tienda = $row["nombre_tienda"];
