@@ -80,25 +80,27 @@
               <div style="margin-left: 1%;">
                  <br>
                   <label style="color: white;">Nombre de la tienda:   </label>
-                  <input class="inp" type="text" name="nombre_tienda" value="" size="60">
+                  <input class="inp" type="text" name="nombre_tienda" value="" size="60" style="margin-left: 5%;">
               </div>
               <br>
               <div style="margin-left: 1%;">
                   <label style="color: white;">Dirección de la tienda:   </label>
-                  <input class="inp" type="text" name="ubicacion" value="" size="59">
+                  <input class="inp" type="text" name="ubicacion" value="" size="60" style="margin-left: 4.2%;">
               </div>
               <br>
               <div style="margin-left: 1%;">
                   <label style="color: white;">Rubro de la tienda:   </label>
-                  <input class="inp" type="text" name="rubro" value="" size="63">
+                  <input class="inp" type="text" name="rubro" value="" size="60" style="margin-left: 6.2%;">
               </div>
               <br>
               <div style="margin-left: 1%;">
+<!--
               <form enctype="multipart/form-data" action="subir_imagen.php" method="POST">
                   <label style="color: white;">Subir imagen de la tienda:</label>
-                <input name="uploadedfile" type="file" />
+                <input name="uploadedfile" type="file" style="margin-left: 2%;">
                 
               </form>
+-->
              </div>
              <div style="margin-left: 1%;">
                 <input type="hidden" name="" value="<?php echo $ID_productor ?>" id="id">  

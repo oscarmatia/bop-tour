@@ -116,14 +116,22 @@
         
         <div class="tiendas">
         <b style="color:white;">
-<?php
-            echo  $_SESSION['nombre_tienda'];
+<?php       
+            $conn = mysqli_connect("localhost", "root", "", "bop");
+            
+            $consulta22 = "SELECT * FROM tienda WHERE ID_productor = '$ID_productor'";
+            
+            $resultado22 = mysqli_query($conn, $consulta22);
+            
+            while($row2 = mysqli_fetch_assoc($resultado22)){
+                echo  $_SESSION['nombre_tienda'];
+            }
 ?>       
         </b>
         </div>
         
         <div class="iconos2">
-              <a href='publicar_tienda.php?ID_productor=".$row["ID_productor"]."'>
+              <a href="publicar_tienda.php?ID_productor">
                <i class="material-icons" id="icon4">
                 add_circle
                </i>
