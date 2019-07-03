@@ -1,9 +1,8 @@
 <?php
+    require('connect.php');
     session_start();
-
+    $con= conectar();
 ?>
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -117,21 +116,21 @@
         <div class="tiendas">
         <b style="color:white;">
 <?php       
-            $conn = mysqli_connect("localhost", "root", "", "bop");
-            
-            $consulta22 = "SELECT * FROM tienda WHERE ID_productor = '$ID_productor'";
-            
-            $resultado22 = mysqli_query($conn, $consulta22);
-            
-            while($row2 = mysqli_fetch_assoc($resultado22)){
-                echo  $_SESSION['nombre_tienda'];
-            }
+//            
+//            $consulta22 = "SELECT * FROM tienda WHERE ID_productor = '$ID_productor'";
+//            
+//            $resultado22 = mysqli_query($con, $consulta22);
+//            
+//            while($row2 = mysqli_fetch_assoc($resultado22)){
+//                $nombre_tienda = row["nombre_tienda"];
+//            }
+            echo $_SESSION['ID_productor'];
 ?>       
         </b>
         </div>
         
         <div class="iconos2">
-              <a href="publicar_tienda.php?ID_productor">
+              <a href="publicar_tienda.php">
                <i class="material-icons" id="icon4">
                 add_circle
                </i>

@@ -1,6 +1,7 @@
 <?php
+<<<<<<< HEAD
     session_start();
-    $conn = mysqli_connect("localhost", "root", "", "bop-tour");
+    $conn = mysqli_connect("localhost", "root", "", "bop");
 
     $ID_productor = $_POST['ID_productor'];
 
@@ -23,6 +24,11 @@
         $num_compras = $row["num_compras"];
         
     }
+=======
+    require('connect.php');
+    $con= conectar();
+	session_start();
+>>>>>>> 23cb626a34941820e449627b2b7553830d652ecd
 ?>
 
 <!DOCTYPE html>
@@ -106,7 +112,7 @@
                 <input type="hidden" name="" value="<?php echo $ID_productor ?>" id="id">  
              </div>
              
-             <input class="boton2" type="submit" name="Publicar" value="Publicar Tienda" style="padding: 1%; margin: 4%; margin-left: 45%;"> 
+             <input class="boton2" type="submit" name="Publicar" value="Publicar Tienda" style="padding: 1%; margin: 4%; margin-left: 45%; color: white;"> 
             </form>
                        
         </div>
