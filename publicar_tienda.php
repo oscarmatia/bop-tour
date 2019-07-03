@@ -1,8 +1,8 @@
 <?php
     session_start();
-    $conn = mysqli_connect("localhost", "root", "", "bop");
+    $conn = mysqli_connect("localhost", "root", "", "bop-tour");
 
-    $ID_productor = $_GET["ID_productor"];
+    $ID_productor = $_POST['ID_productor'];
 
     $consulta20 =  "SELECT * FROM productor WHERE ID_productor='$ID_productor'";
 
