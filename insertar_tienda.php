@@ -1,20 +1,20 @@
 <?php
-
+    
+    require('connect.php');
     session_start();
-	
-	$conexion4 = mysqli_connect("localhost", "root", "", "bop");
-
+    $con = conectar();
+    
+    $ID_productor = $_SESSION['ID_productor'];
 
 	$nombre_tienda = $_POST["nombre_tienda"];
 	$ubicacion = $_POST["ubicacion"];
-    $ID_productor = $_POST["ID_productor"];
 	$rubro = $_POST["rubro"];
 
 
 	$consulta21 = "INSERT INTO tienda VALUES 
     ('', $nombre_tienda','$ubicacion','$ID_productor','$rubro','')";
 
-	$resultado21 = mysqli_query($conexion4, $consulta21);
+	$resultado21 = mysqli_query($con, $consulta21);
 
     
     echo '<script>alert("Tienda publicada con exito")</script>';
