@@ -54,7 +54,7 @@
 				<input type="Buscar" placeholder="Buscar..." class="inp" name="busqueda">						
 		</form>
 <?php
-			$conexion = mysqli_connect("localhost", "root", "", "bop");
+			$conexion = mysqli_connect("localhost", "root", "", "bop-tour");
 
 			$consulta = "SELECT DISTINCT nombre_producto FROM producto_artesanal ";
 					

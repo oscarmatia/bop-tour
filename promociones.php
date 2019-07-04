@@ -1,4 +1,5 @@
 <?php
+        require('connect.php');
         session_start();
 ?>
 
@@ -24,7 +25,9 @@
 				<center>
 				Hola 
 <?php
-                       echo $_SESSION['nombre_cliente'];    
+                       echo $_SESSION['nombre_cliente'];
+                       echo ' ';
+                       echo $_SESSION['apellido_cliente'];
 ?>
                 !!
 				</center>

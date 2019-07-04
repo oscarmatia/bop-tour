@@ -1,4 +1,5 @@
 <?php
+    require('connect.php');
       session_start();
 ?>
 
@@ -18,6 +19,7 @@
         <a href="principal_registrado.php">
             <img src="logo.png" alt="" class="logo">
         </a>
+        <a href="principal_registrado.php" style="color:white; margin-top: 10%; margin-left: 6%;">VOLVER ATRAS</a>
     </div>
         <a href="perfil_usuario.php">
 		    <img src="perfil.jpg" alt="" class="perfil_imagen">
@@ -37,7 +39,7 @@
     </form>
     <div class="contenedor_principal">
         <h3 style="color: white; margin-top: 1%; margin-left: 3%;">Planifica tu ruta</h3>
-        <h5 style="color: wheat; margin-top: 1%; margin-left: 3%;">Se buscarán las mejores opciones disponibles conforme a tus necesidades</h5>
+        <h5 style="color: white; margin-top: 1%; margin-left: 3%;">Se buscarán las mejores opciones disponibles conforme a tus necesidades</h5>
         <hr style="color: wheat; margin-top: 2%;">
         <div class="seccion1">
            <label style="color:white;">Región:  </label>
@@ -81,10 +83,10 @@
             </select>
         </div>
         <a href="resultados_planificar_ruta.php">
-        <input type="buttom" value="Buscar" style="color: white; background-color: green; border: solid; border-color: green; text-align: center; margin-top: 15%; margin-left: 10%;">
+            <input type="buttom" value="Buscar" id="boton_buscar">
         </a>
         <a href="gestionar_tour.php">
-            <input type="button" value="Gestionar" style="color: white; background-color: blue; border: solid; border-color: blue; text-align: center; margin-top: 15%; margin-left: 50%; padding-left: 4%; padding-right: 5%;padding-top: 2%; padding-bottom: 2%;">
+            <input type="button" value="Gestionar" id="boton_gestionar">
         </a>
     </div>
     <footer class="footer">

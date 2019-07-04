@@ -130,16 +130,19 @@ input#botonsito:hover
     position: absolute;
     width: 94%;
     height: 80%;
-    border-color: yellow 5px solid;
+    border-color: black;
+    border: solid;
     border-radius: 5%;
-    margin-top: 4.6%;
+    margin-top: 4.8%;
     margin-left: 3%;
 }
 .co1{
+    position: absolute;
     float: left;
     width: 50%;
     height: 50%;
-    border-color: blue;
+    border-color: black;
+    border: solid;
 }
 
 .co2{
