@@ -200,6 +200,17 @@ input#botonsito:hover
 
 #boton_cambiar{
     padding: 1.5% 4% 1.5% 4%;
-    margin-left: 5%;
+    margin-left: 36%;
+    margin-top: 2%;
+    color: white;
+    background-color: mediumblue;
+    border-color: mediumblue;
+    cursor: pointer;
+}
+
+#boton_cambiar:hover{
+    cursor: pointer;
+    background-color: darkblue;
+    opacity: 0.9;
 }
 
