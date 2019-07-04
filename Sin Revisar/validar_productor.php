@@ -1,7 +1,6 @@
 <?php
 	
     require('connect.php');
-    $con = conectar();
 
 	$correo = $_POST['correo'];
 	$password = $_POST['password'];
@@ -10,7 +9,10 @@
 
 	$resultado3 = mysqli_query($con, $consulta3);
 
-    while($row=mysqli_fetch_assoc($resultado3)){
+    while($row=mysqli_fetch_assoc($resultado3))
+	{
+		
+		
         $ID_productor = $row["ID_productor"];
 		$nombre_productor = $row["nombre_productor"];
 		$apellido_productor = $row["apellido_productor"];
@@ -26,7 +28,8 @@
 
 	$row = mysqli_num_rows($resultado3);
     
-
+    $consulta4 = "SELECT * FROM tienda WHERE ID_productor ='$_SESSION['ID_productor']' ";
+    $resultado4 = mysqli_query($con, $consulta4);
     
     while($row2 = mysqli_fetch_assoc($resultado4)){
         $nombre_tienda = $row["nombre_tienda"];

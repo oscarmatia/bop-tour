@@ -1,18 +1,16 @@
 <?php
 	include("connect.php");
-	$con= conectar();
 ?>
-
 
 <!DOCTYPE html>
 
 <html lang="es">
 	<head>
 		<meta charset="UTF-8">
-		<title>BOP-TOUR</title>
+		<title>Inicio</title>
 		<link rel="stylesheet" href="principal.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<script src="principal_productor.js"> </script>		
+		<script src="funciones.js"> </script>		
 	</head>
 
 	<body>
@@ -27,7 +25,7 @@
 	<form action="" method="post">
 	
 		<div class="boton">
-			<input type="button" value="Iniciar Sesión" id="botonsito" onclick="redireccion_iniciar_sesion_productor()">
+			<input type="button" value="Iniciar Sesión" id="botonsito" onclick="redireccion_iniciar_sesion()">
 		</div>
 		
 	</form>	

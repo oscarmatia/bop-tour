@@ -1,7 +1,6 @@
 <?php
     require('connect.php');
     session_start();
-    $con= conectar();
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -56,7 +55,7 @@
                        echo $_SESSION['apellido_productor'];   
 ?>
         </b>   
-            <a href="editar_perfil_productor.php" id="perfil">Editar perfil</a>
+            <a href="editar_perfil.php" id="perfil">Editar perfil</a>
 	    </center>
 	    </div>
 	    <hr align="center" class="linea">
