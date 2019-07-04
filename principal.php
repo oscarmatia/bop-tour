@@ -57,7 +57,7 @@
 			</center>
 		</div>	
 				
-		<footer class="footer"></footer>
+		<footer class="footer">
 		<div class="central">
 			
 				<div class="siguenos">
@@ -75,6 +75,6 @@
 					<img src="twitter.png" alt="" class="twitter">
 				</a>
 		</div>	
-			
+		</footer>	
 	</body>
 </html>
