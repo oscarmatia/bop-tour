@@ -1,13 +1,13 @@
 <?php
-<<<<<<< HEAD
+    require('connect.php');
+    $con= conectar();
     session_start();
-    $conn = mysqli_connect("localhost", "root", "", "bop");
 
     $ID_productor = $_POST['ID_productor'];
 
     $consulta20 =  "SELECT * FROM productor WHERE ID_productor='$ID_productor'";
 
-    $resultado20 = mysqli_query($conn, $consulta20);
+    $resultado20 = mysqli_query($co n, $consulta20);
 
     while($row = mysqli_fetch_assoc($resultado20)){
         
@@ -24,11 +24,10 @@
         $num_compras = $row["num_compras"];
         
     }
-=======
-    require('connect.php');
-    $con= conectar();
-	session_start();
->>>>>>> 23cb626a34941820e449627b2b7553830d652ecd
+
+
+
+
 ?>
 
 <!DOCTYPE html>

@@ -54,7 +54,7 @@
             
             <input class="boton" type="submit" name="inicio" value="Iniciar Sesión">
             
-          </form>   
+          </form>       
       </div>
       
     </div>
