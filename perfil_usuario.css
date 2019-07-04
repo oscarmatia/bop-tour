@@ -249,14 +249,14 @@ input#botonsito:hover
     margin-left: 36%;
     margin-top: 2%;
     color: white;
-    background-color: mediumblue;
-    border-color: mediumblue;
+    background-color: red;
+    border-color: red;
     cursor: pointer;
 }
 
 #boton_cambiar:hover{
     cursor: pointer;
-    background-color: darkblue;
+    background-color: darkred;
     opacity: 0.9;
 }
 

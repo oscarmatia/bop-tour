@@ -50,6 +50,8 @@
        <label style="float:left;">Nombre productor:</label><input type="text" placeholder="Juanito" style="margin-left: 1%;"><br>
        <label style="float:left;;">Apellido productor:</label><input type="text" placeholder="Perez" style="margin-left: 1%;"><br>
        <label style="float:left;">Rut:</label><input type="text" placeholder="123456789" style="margin-left: 26%;"><br>
+       <label style="float:left;">Correo:</label><input type="text" placeholder="example@example.com" style="margin-left: 21%;"><br>
+       <label style="float:left;">Contraseña:</label><input type="password" placeholder="********" style="margin-left: 13%;"><br>
        <label style="float:left;">Sexo:</label><input type="text" name="" value="" placeholder="M o F" style="margin-left: 24%;"><br>
        <label style="float:left;">Direccion:</label><input type="text" style="margin-left: 16.5%;" placeholder="pasaje n°casa"><br>
        <label style="float:left;">Fecha nacimiento:</label><input type="date" style="margin-left: -1%;" placeholder=""><br>

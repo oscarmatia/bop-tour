@@ -56,7 +56,7 @@ Iniciar Sesion productor
             </label>
             <input class="boton" type="submit" name="inicio" value="Iniciar Sesión" onclick="sesion_iniciada_productor()">
             
-          </form>   
+          </form>       
       </div>
       
     </div>
