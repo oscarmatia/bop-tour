@@ -21,7 +21,7 @@
         <div class="barra_navegacion">
 			    <img src="logo.png" alt="" class="logo">
 	    </div>
-            <a href="perfil_productor.php"> 
+            <a href="perfil_usuario.php"> 
 	            <img src="perfil.jpg" alt="" class="perfil_imagen">
 	        </a>
         <div class="sesion_usuario">

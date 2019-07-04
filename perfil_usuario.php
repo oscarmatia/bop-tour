@@ -89,23 +89,24 @@
         </div>
     </div>
     
-    <footer class="footer">
-     <div class="siguenos">
-           <b>Siguenos</b>
-     <center>
-         
-         <a href="https://www.facebook.com/Bop-tour-391667081681891/?modal=admin_todo_tour" target="_blank">    <img src="fb.png" alt="" class="facebook">
-         </a>
+   <footer class="footer"></footer>
+		<div class="central">
+			
+				<div class="siguenos">
+					<b>Siguenos</b>				</div>
+			
+				<a href="https://www.facebook.com/Bop-tour-391667081681891/?modal=admin_todo_tour" target="_blank">
+					<img src="fb.png" alt="" class="facebook">
+				</a>
 				
-         <a href="https://www.instagram.com/bop_tour/" target="_blank">
-             <img src="insta.png" alt="" class="instagram">
-         </a>
+				<a href="https://www.instagram.com/bop_tour/" target="_blank">
+					<img src="insta.png" alt="" class="instagram">
+				</a>
 				
-         <a href="https://twitter.com/BopTour" target="_blank">
-		     <img src="twitter.png" alt="" class="twitter">
-         </a>
-        </center>
-    </div>
-   </footer>
+				<a href="https://twitter.com/BopTour" target="_blank">
+					<img src="twitter.png" alt="" class="twitter">
+				</a>
+		</div>
+   
 </body>
 </html>
