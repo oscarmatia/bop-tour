@@ -47,16 +47,16 @@
                 echo ' ';
 ?>
                 </p>                
-            <a href="editar_perfil.php" id="perfil">Editar perfil</a>
+            <a href="editar_perfil_usuario.php" id="perfil">Editar perfil</a>
         </center>
 	    </div>
       <ul class="lista">
-          <li style="margin-top:2%;">Puntos acumulados: 
+          <li style="margin-top:2%; color: white;">Puntos acumulados: 
 <?php
               echo $_SESSION['puntos'];
 ?>      
           </li>
-          <li style="margin-top:2%;">Puntos vencidos: 0</li>
+          <li style="margin-top:2%; color: white;">Puntos vencidos: 0</li>
       </ul>
        <hr align="center" class="linea">
         </div>
@@ -81,6 +81,11 @@
            <a href="promociones.php">
             <input type="button" id="boton_canjear" value="Canjear Promociones">
            </a>
+        </div>
+        <div class="derecha_boton_new">
+            <a href="cambiar_usuario.php">
+                <input type="button" id="boton_cambiar" value="Quiero convertirme en productor!">
+            </a>
         </div>
     </div>
     

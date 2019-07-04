@@ -171,7 +171,7 @@ input#botonsito:hover
 .derecha_boton{
     float: left;
     width: 45%;
-    height: 30%;
+    height: 15%;
     margin-top: 2%;
     margin-left: 3%;
 }
@@ -180,14 +180,26 @@ input#botonsito:hover
     cursor: pointer;
     color: white;
     margin-left: 35%;
-    margin-top: 15%;
+    margin-top: 2%;
     background-color: green;
     border-color: green;
-    text-align: center;padding: 1.5% 4% 1.5% 4%;
+    text-align: center;
+    padding: 1.5% 4% 1.5% 4%;
 }
 #boton_canjear:hover{
+    cursor: pointer;
     background-color: darkgreen;
     opacity: 0.9;
-    
+}
+
+.derecha_boton_new{
+    float: left;
+    width: 45%;
+    height: 10%;    
+}
+
+#boton_cambiar{
+    padding: 1.5% 4% 1.5% 4%;
+    margin-left: 5%;
 }
 
