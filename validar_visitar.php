@@ -5,11 +5,11 @@
 	$password = $_POST['password'];
 
 
-	$conexion = mysqli_connect("localhost", "root", "", "bop");
+	require('connect.php');
 
 	$consulta = "SELECT * FROM cliente WHERE correo='$correo' and password='$password' ";
 
-	$resultado = mysqli_query($conexion, $consulta);
+	$resultado = mysqli_query($con, $consulta);
 
 	$filas = mysqli_num_rows($resultado);
 
@@ -36,6 +36,6 @@
 
 	mysqli_free_result($resultado);
 
-	mysqli_close($conexion);
+	mysqli_close($con);
 
 ?>

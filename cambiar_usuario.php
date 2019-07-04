@@ -1,6 +1,5 @@
 <?php
     require('connect.php');
-    $con = conectar();
     session_start();
 ?>
 <!DOCTYPE html>
