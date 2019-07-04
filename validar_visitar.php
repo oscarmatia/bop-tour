@@ -1,15 +1,14 @@
 <?php
-	
-
+    require('connect.php');
+    $con = conectar();
+    
 	$correo = $_POST['correo'];
 	$password = $_POST['password'];
 
 
-	$conexion = mysqli_connect("localhost", "root", "", "bop");
-
 	$consulta = "SELECT * FROM cliente WHERE correo='$correo' and password='$password' ";
 
-	$resultado = mysqli_query($conexion, $consulta);
+	$resultado = mysqli_query($con, $consulta);
 
 	$filas = mysqli_num_rows($resultado);
 
