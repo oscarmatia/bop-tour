@@ -200,3 +200,22 @@ table{
     text-align: center;
     text-transform: uppercase;
 }
+
+.cajita{
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+    margin-top: 7%;
+    border: solid;
+    border-color: black;
+    border-radius: 6%;
+    
+}
+
+.refe{
+    position: absolute;
+    color: white;
+    margin-left: 6%;
+    margin-top: 1%;
+}

@@ -1,94 +1,77 @@
 <?php
-session_start();
+    require('connect.php');
+    session_start();
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Publicar producto artesanal</title>
+	<link rel="stylesheet" type="text/css" href="publicar_producto_artesanal.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="redireccion_cerrar_sesion.js"></script>
 </head>
-<link rel="stylesheet" type="text/css" href="publicar_producto_artesanal.css">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
 <body>
-
-
-	<img class="imagen-campo" src="camino_campo.jpg">
-
-	<div class="barra-1">
-		<div class="iniciar-sesion">
-
-			<div class="logo">
-				<img src="logo.png">
-			</div>
-
-			<a class="ir-a-inicio" href="perfil_productor.php">Ir a perfil</a>
-
-		</div>
-
-	</div>
-
-	<div class="barra-2">
-
+	<div class="contenedor">
+        <div class="barra_navegacion">
+			    <img src="logo.png" alt="" class="logo">
+	    </div>
+            <a href="perfil_productor.php"> 
+	            <img src="perfil.jpg" alt="" class="perfil_imagen">
+	        </a>
+	        <a href="perfil_productor.php" class="refe">VOLVER A PERFIL PRODUCTOR</a>
+        <div class="sesion_usuario">
+        <center>
+            Hola
+<?php
+            echo $_SESSION['nombre_productor'];
+            echo ' ';
+            echo $_SESSION['apellido_productor'];
+?>
+           !!
+        </center>
+        </div>
+        <form action="cerrar_sesion.php" method="post">
+            <div class="boton">
+                <input type="button" value="Cerrar sesión" id="botonsito" onclick="redireccion_cerrar_sesion()">
+            </div>
+        </form>
+    </div>
+    
+	<div class="arriba">
 		<div>
 			<ul class="list-1">
-
 				<li class="li1" id="efect"><a href="publicar_producto_artesanal.php">Publicar producto artesanal</a></li>
 				<li class="li1" id="efect"><a href="mis_productos.php">Mis productos</a></li>
-
 			</ul>
 		</div>	
-
-
-
 	</div>
 
-	<div class="promociona-text">
-
+	<div class="titulo">
 		<h1 style="color: white;">Promociona tu producto</h1>
 		<hr width="55%;">	
-
-		<h3 style="margin-top: 3%; color: white;">Tu producto será publicado si cumple con las reglas de nuestro sistema</h3>
+		<h3 style="margin-top: 1%; color: white;">Tu producto será publicado si cumple con las reglas de nuestro sistema</h3>
 	</div>
-
-
-	<div class="barra-3">
-
+	<div class="caja_grande">
 		<div class="cuadrado-1">
-
-
 			<div class="sub-cuadrado" >
-
-
 				<p class="info-p">Información de tu producto</p>
-
 				<div class="categoria-producto">  
-
-
 					<p class="cat-p">Categoría producto</p>  
-
 					<select name="categoria_producto" class="categoria" required>
 						<option value="Cervecita"> Cervecita </option>
 						<option value="Vino"> Vino </option>
 						<option value="Miel">Miel</option>
 						<option value="Otro">Otro</option>
-
 					</select>
-
-
-
-				</div> 
-
-
+                </div> 
 				<div class="cont-titulo">     
 					<p class="tit ">  Título </p>        
 					<input name="titulo_anuncio"id="titulo_anuncio" type="text"  required>  
 				</div>
-
-
-
 				<div class="cont-descripcion">
 					<div id="text-area">
 						<p class="desc-p">Descripción</p>
@@ -96,70 +79,37 @@ session_start();
 						</textarea>
 					</div>
 				</div>
-
-
-
-
-
-
-
-
 			</div>
-
-
+			
 			<div class="sub-cuadrado2">
-
 				<div class="cont-precio">     
-					<p class="pre ">Precio</p>        
+					<p class="pre">Precio</p>        
 					<input name="precio"id="precio" type="text"  required>  
 				</div>
-
 				<div class="cont-cant">     
 					<p class="cant ">Cantidad</p>        
 					<input name="cantidad"id="cantidad" type="text"  required>  
 				</div>
-
-
 				<div class="cont-imagen">  
 					<div class="select-img">
 						<p >Seleccionar imagen</p> 
 					</div> 
-
 					<div class="subir_imagen " id="help">
-						<p id="texto">Agregar imagenes</p>
 						<input id="input-seleccionar" type="file"  name="foto[]" multiple required>
-
 					</div>
-
-					<div id="hola"> </div>    
-
+				    <div id="hola"> </div>    
 				</div>  
-
-
-
 			</div>
-
 		</div>
-
-
 	</div>
 
-	<!-- PARA CUADRADO QUE CONTIENE REGION Y COMUNA !!! -->
+	
 	<div class="barra-4">
-
 		<div class="cuadrado-1">
-
-
 			<div class="sub-cuadrado" >
-
-
 				<div class="region">  
-
-
 					<p class="cat-r">Región</p>  
-
 					<select name="region" id="select-region" required>
-
 						<option value="Metropolitana">Metropolitana</option>
 						<option value="Tarapacá">I.- Región de Tarapacá</option>
 						<option value="Antofagasta">I.- Región de Antofagasta</option>
@@ -176,40 +126,18 @@ session_start();
 						<option value="Los Ríos">XIV.- Región de Los Ríos</option>
 						<option value="Arica y parinacota">XV.- Región de Arica y Parinacota</option>
 					</select>
-
-
-
 				</div> 
-
-				<div class="comuna">  
-
-
+            <div class="comuna">  
 					<p class="cat-c">Comuna</p>  
-
-					<select name="comuna" id="select-comuna" required>
-
+                	<select name="comuna" id="select-comuna" required>
 						<option value="Talcahuano">Talcahuano</option>
 						<option value="San Pedro">San Pedro</option>
 						<option value="Chiguayante">Chiguayante</option>
 						>
 					</select>
-
-
-
 				</div> 
-
-
-
-
 			</div>
-
-
-
 		</div>
-
-
-
-
 	</div>
 
 	<div class="boton-promocionar">
@@ -218,13 +146,23 @@ session_start();
 		</center>
 
 	</div>
-
-
-
-
-
-
-
-
+    <footer class="footer"></footer>
+		<div class="central">
+			
+				<div class="siguenos">
+					<b>Siguenos</b>				</div>
+			
+				<a href="https://www.facebook.com/Bop-tour-391667081681891/?modal=admin_todo_tour" target="_blank">
+					<img src="fb.png" alt="" class="facebook">
+				</a>
+				
+				<a href="https://www.instagram.com/bop_tour/" target="_blank">
+					<img src="insta.png" alt="" class="instagram">
+				</a>
+				
+				<a href="https://twitter.com/BopTour" target="_blank">
+					<img src="twitter.png" alt="" class="twitter">
+				</a>
+		</div>
 </body>
 </html>

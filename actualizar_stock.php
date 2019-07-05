@@ -23,6 +23,7 @@
             <a href="perfil_productor.php"> 
 	            <img src="perfil.jpg" alt="" class="perfil_imagen">
 	        </a>
+	        <a href="perfil_productor.php" class="refe">VOLVER A PERFIL PRODUCTOR</a>
         <div class="sesion_usuario">
         <center>
             Hola
@@ -40,7 +41,8 @@
             </div>
         </form>
     </div>
-    <h2 style="color: white; position: fixed; margin-top: 6%; margin-left: 8%;">Actualizar Inventario</h2>
+    <div class="cajita">
+    <h2 style="color: white; position: fixed; margin-top: 5%; margin-left: 7%;">Actualizar Inventario</h2>
    
         <b style="position: absolute; color: white; margin-top: 16%; margin-left: 8%;">Aqui se vera un listado de tus productos y el stock correspondiente, podras sobrescribir el stock para modificarlo</b>
         <form action="actualiza_stock.php">
@@ -73,11 +75,12 @@
 ?>
 -->
         </table>
+        <br>
         <input id="boton_update" type="submit" value="Actualizar Stock">
         </form>
 
-        
-    <footer class="footer"></footer>
+    </div>
+<footer class="footer"></footer>
 		<div class="central">
 			
 				<div class="siguenos">
