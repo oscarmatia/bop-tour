@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    font-family: 'Roboto', sans-serif;	
+	overflow-y:hidden; 
 }
 
 .imagen_fondo{
@@ -27,14 +29,13 @@
 
 .olvido{
     position: absolute;
-    background-color: black;
     border-color: black;
-    border-radius: 5%;
+    border: solid;
+    border-radius: 6%;
     width: 90%;
     height: 60%;
     margin-top: 10%;
     margin-left: 5%;
-    opacity: 0.5;
 }
 .footer{
 	background-color: wheat;
@@ -100,6 +101,7 @@
 
 .boton1:hover{
     background-color: darkgreen;
+    cursor: pointer;
 }
 
 .boton2{
@@ -117,4 +119,5 @@
 
 .boton2:hover{
     background-color: darkblue;
+    cursor: pointer;
 }
