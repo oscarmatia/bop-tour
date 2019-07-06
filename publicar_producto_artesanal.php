@@ -18,29 +18,28 @@ session_start();
 	<img class="imagen-campo" src="camino_campo.jpg">
 
 	<div class="barra-1">
-		<div class="iniciar-sesion">
-
-			<div class="barra_navegacion">
-
-				<a href="principal_registrado.php">
-					<img src="logo.png" alt="" class="logoo">
-				</a>
-
-			</div>
-			<a href="perfil_usuario.php">
-				<img src="perfil.jpg" alt="" class="perfil_imagen">
-			</a>
-
-			<div class="sesion_usuario">
-				<center>
-					Hola
-					<?php
-					echo $_SESSION['nombre_productor'];
-					?>
-				</center>
-			</div>
-
+		<div class="barra_navegacion">
+			<img src="logo.png" alt="" class="logo">
 		</div>
+		<img src="perfil.jpg" alt="" class="perfil_imagen"style="margin-bottom: 1%; margin-right: 10%;">
+		
+		<div class="sesion_usuario">
+			<center>
+				<?php
+				echo $_SESSION['nombre_productor'];
+				echo ' ';
+				echo $_SESSION['apellido_productor'];    
+				?>
+
+			</center>
+		</div>
+		<form action="cerrar_sesion.php" method="post">
+
+			<div class="boton">
+				<input type="button" value="Cerrar Sesión" id="botonsito" onclick="redireccion_cerrar_sesion()">
+			</div>
+
+		</form>
 
 	</div>
 

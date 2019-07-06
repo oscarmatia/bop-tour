@@ -86,6 +86,16 @@ img{
 
 }
 
+.perfil_imagen
+{
+	position: absolute;
+	height: 100%;
+	width: 3.3%;
+	
+	margin-left: 65%;
+	margin-top: 0.2%;
+}
+
 .barra-2{
 
 	width: 100%;
@@ -148,11 +158,6 @@ img{
 	/*background-color: gray;*/
 
 
-}
-
-.perfil_imagen{
-	height: 100px;
-	float: right;
 }
 
 .cuadrado-1{
