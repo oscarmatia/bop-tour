@@ -20,27 +20,25 @@ session_start();
 	<div class="barra-1">
 		<div class="iniciar-sesion">
 
-			<div class="logo">
-				<img src="logo.png">
+			<div class="barra_navegacion">
+
+				<a href="principal_registrado.php">
+					<img src="logo.png" alt="" class="logoo">
+				</a>
+
 			</div>
 			<a href="perfil_usuario.php">
 				<img src="perfil.jpg" alt="" class="perfil_imagen">
 			</a>
+
 			<div class="sesion_usuario">
 				<center>
 					Hola
 					<?php
-					echo $_SESSION['nombre_cliente'];
+					echo $_SESSION['nombre_productor'];
 					?>
 				</center>
 			</div>
-			<form action="cerrar_sesion.php" method="post">
-				<div class="boton">
-					<input type="button" value="Cerrar Sesion" id="botonsito" onclick="redireccion_cerrar_sesion()"> 
-				</div>
-			</form>
-
-			
 
 		</div>
 
@@ -49,15 +47,13 @@ session_start();
 	<div class="barra-2">
 
 		<div>
-			<ul class="list-1">
+			<ul  class="list-1">
 
 				<li class="li1" id="efect"><a href="publicar_producto_artesanal.php">Publicar producto artesanal</a></li>
 				<li class="li1" id="efect"><a href="mis_productos.php">Mis productos</a></li>
 
 			</ul>
 		</div>	
-
-
 
 	</div>
 

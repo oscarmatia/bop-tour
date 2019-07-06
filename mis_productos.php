@@ -15,6 +15,7 @@ $resultado=mysqli_query($con,$consulta2);
 	<title>Mis Productos</title>
 </head>
 <link rel="stylesheet" type="text/css" href="publicar_producto_artesanal.css">
+<link rel="stylesheet" type="text/css" href="mis_productos.css">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
 <body>
 
@@ -29,9 +30,17 @@ $resultado=mysqli_query($con,$consulta2);
 
 		<div class="iniciar-sesion">
 
+			<div class="barra_navegacion">
+
+				<a href="principal_registrado.php">
+					<img src="logo.png" alt="" class="logoo">
+				</a>
+
+			</div>
 			<a href="perfil_usuario.php">
 				<img src="perfil.jpg" alt="" class="perfil_imagen">
 			</a>
+
 			<div class="sesion_usuario">
 				<center>
 					Hola
