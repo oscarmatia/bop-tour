@@ -23,8 +23,24 @@ session_start();
 			<div class="logo">
 				<img src="logo.png">
 			</div>
+			<a href="perfil_usuario.php">
+				<img src="perfil.jpg" alt="" class="perfil_imagen">
+			</a>
+			<div class="sesion_usuario">
+				<center>
+					Hola
+					<?php
+					echo $_SESSION['nombre_cliente'];
+					?>
+				</center>
+			</div>
+			<form action="cerrar_sesion.php" method="post">
+				<div class="boton">
+					<input type="button" value="Cerrar Sesion" id="botonsito" onclick="redireccion_cerrar_sesion()"> 
+				</div>
+			</form>
 
-			<a class="ir-a-inicio" href="perfil_productor.php">Ir a perfil</a>
+			
 
 		</div>
 
