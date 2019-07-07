@@ -1,9 +1,12 @@
-<?php
-$conexion = new mysqli("localhost", "root", "", "bop-tour");
-$consulta = "SELECT * FROM producto_artesanal";
-$resultado = mysqli_query($conexion,$consulta);
-?>
+<?php 
+include 'connect.php';
+$con = conectar();
+session_start();
 
+$consulta2='SELECT ID_producto_artesanal, nombre_producto, cantidad, descripcion,precio,comuna,categoria_producto from producto_artesanal';
+$resultado=mysqli_query($con,$consulta2);
+
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -12,40 +15,9 @@ $resultado = mysqli_query($conexion,$consulta);
 	<title>Mis Productos</title>
 </head>
 <link rel="stylesheet" type="text/css" href="publicar_producto_artesanal.css">
+<link rel="stylesheet" type="text/css" href="mis_productos.css">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
 <body>
-
-	<script type="text/javascript">
-
-		function ingresarAlumno(){
-			var titulo = document.getElementById("titulo_anuncio").value;
-			var categoria = document.getElementById("categoria_producto").value;
-			var descripcion = document.getElementById("descripcion").value;
-			var precio = document.getElementById("precio").value;
-			var region = document.getElementById("region").value;
-			var comuna = document.getElementById("comuna").value;
-			var cantidad = document.getElementById("cantidad").value;
-
-
-
-			var data = '&titulo='+titulo+'categoria='+categoria+'&descripcion='+descripcion+'&precio='+precio+'&region='+region+'&comuna='+comuna+'&cantidad='+cantidad;
-
-			$.ajax({
-				type: 'POST',
-				url: 'guardar_producto.php',
-				data: data,
-				beforeSend: function() {
-					console.log(data);
-				},
-				success: function(data) {
-					console.log(data);
-					location.reload();
-				}
-			})
-			return false;
-		};
-	</script>
-
 
 
 
@@ -54,19 +26,34 @@ $resultado = mysqli_query($conexion,$consulta);
 
 	<div class="barra-1">
 
+		<div class="barra_navegacion">
+			<img src="logo.png" alt="" class="logo">
+		</div>
+		<img src="perfil.jpg" alt="" class="perfil_imagen" style="margin-bottom: 1%;">
+		
+		<div class="sesion_usuario">
+			<center>
 
+				<?php
+				echo $_SESSION['nombre_productor'];
+				echo ' ';
+				echo $_SESSION['apellido_productor'];    
+				?>
 
-		<div class="iniciar-sesion">
+			</center>
+		</div>
+		<form action="cerrar_sesion.php" method="post">
 
-			<div class="logo">
-				<img src="logo.png">
+			<div class="boton">
+				<input type="button" value="Cerrar Sesión" id="botonsito" onclick="redireccion_cerrar_sesion()">
 			</div>
 
-			<a class="ir-a-inicio" href="principal.php">Ir a inicio</a>
+		</form>
 
-		</div>
 
 	</div>
+
+
 
 	<div class="barra-2">
 
@@ -100,39 +87,38 @@ $resultado = mysqli_query($conexion,$consulta);
 
 			<center>
 				
-<!-- /*
-				<table style="width:20%;text-align:center">
-					<tr>
-						<th>Titulo</th>
-						<th>Categoria</th>
-						<th>Descripcion</th>
-						<th>Precio</th>
-						<th>Region</th>
-						<th>Comuna</th>
-						<th>Cantidad</th>
+
+				<table class="tablita">
+
+					<tr style="margin-left: 2%;">
+
+						<th class="eu">Id</th>
+						<th class="eu">nombre</th>
+						<th class="eu">Cantidad</th>
+						<th class="eu">Descripción</th>
+						<th class="eu">Precio</th>
+						<th class="eu">Comuna</th>
+						<th class="eu">Categoria</th>
 
 					</tr>
 
-
-
-
 					<?php
-					while($row=mysqli_fetch_assoc($resultado)){
+					while($fila=mysqli_fetch_array($resultado)){
 						echo "<tr>";
-						echo "<td>".$row["titulo"]."</td>";
-						echo "<td>".$row["categoria"]."</td>";
-						echo "<td>".$row["descripcion"]."</td>";
-						echo "<td>".$row["precio"]."</td>";
-						echo "<td>".$row["region"]."</td>";
-						echo "<td>".$row["comuna"]."</td>";
-						echo "<td>".$row["cantidad"]."</td>";
-
+						echo "<td>".$fila["ID_producto_artesanal"]."</td>";
+						echo "<td>".$fila["nombre_producto"]."</td>";
+						echo "<td>".$fila["cantidad"]."</td>";
+						echo "<td>".$fila["descripcion"]."</td>";
+						echo "<td>".$fila["precio"]."</td>";
+						echo "<td>".$fila["comuna"]."</td>";
+						echo "<td>".$fila["categoria_producto"]."</td>";
 						echo "</tr>";
 					}
 					?>
+
 				</table>
 
-				/* -->
+
 
 			</center>
 
@@ -148,14 +134,5 @@ $resultado = mysqli_query($conexion,$consulta);
 	</div>
 
 
-
-
-
-
-
-
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,72 @@
+.logoo{
+	border-radius: 100px;
+	margin-bottom: 1%;
+	margin: 1px;
+	padding: 0px 0px 0px 10px;
+}
+
+.barra-1{
+	height: 8%;
+}
+.barra-2{
+	padding-top: 0.5%;
+}
+
+.perfil_imagen
+{
+	position: absolute;
+	background-color: azure;
+	
+	border-radius: 100px;
+	
+	height: 90%;
+	width: 3.3%;
+	
+	margin-left: 70%;
+	margin-top: 0.2%;
+}
+
+
+.boton
+{
+	position: absolute;
+	margin-top: 0.1%;
+	margin-left: 88.5%;
+}
+
+
+.sesion_usuario
+{
+	position: absolute;
+	color: white;
+	
+	height: 4.5%;
+	width: 14%;
+	
+	margin-left: 72%;
+	margin-top: 0.3%;
+	padding-top: 0.7%;
+
+	display: block;
+	text-align: -webkit-center;
+}
+
+.perfil_imagen
+{
+	position: absolute;
+	background-color: azure;
+	font-size: 55px;
+	margin-bottom: 1%;
+}
+
+
+
+td{
+	border: 1px white solid;
+
+}
+
+.eu{
+	border: 1px white solid;
+
+}

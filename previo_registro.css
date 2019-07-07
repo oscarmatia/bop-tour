@@ -1,0 +1,40 @@
+.cont-tipo-usuario{
+
+	/*background-color: blue;*/
+	width: 80%;
+	height: 60%;
+	margin-top: 2%;
+	border: 1px white: ;
+
+
+}
+
+.cont-uu{
+
+	/*background-color: red;*/
+	width:46%;
+	height: 50%;
+	display: inline-block;
+	margin-top: 10%;
+	-webkit-box-shadow: -1px -4px 7px 16px rgba(255,255,255,0.1);
+	-moz-box-shadow: -1px -4px 7px 16px rgba(255,255,255,0.1);
+	box-shadow: -1px -4px 7px 16px rgba(255,255,255,0.1);
+	cursor: pointer;
+}
+.cont-pp{
+
+	/*background-color: blue;*/
+	width: 46%;
+	height: 50%;
+	display: inline-block;
+	float: right;
+	margin-top: 10%;
+	-webkit-box-shadow: -1px -4px 7px 16px rgba(255,255,255,0.1);
+	-moz-box-shadow: -1px -4px 7px 16px rgba(255,255,255,0.1);
+	box-shadow: -1px -4px 7px 16px rgba(255,255,255,0.1);
+	cursor: pointer;
+}
+
+a{
+	text-decoration: none;
+}
