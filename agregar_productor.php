@@ -1,6 +1,8 @@
 
 <!--AQUI VA LA CONSULTA PARA QUE AGREGARLO A LA BD DE PRODUCTOR-->
 <?php
+    
+    session_start();
     require('connect.php');
     $con = conectar();
 
@@ -15,10 +17,13 @@
 	
 
 	
-	$consulta = "INSERT INTO productor ('ID_productor','nombre_productor','apellido_productor','rut','correo','password','sexo','direccion','fecha_nacimiento','num_visitas','num_compras') VALUES ('','$nombre_cliente','$apellido_cliente','$rut','$correo','$password','$sexo','$direccion','$fecha_nacimiento','NULL','NULL')";
+	$consulta_add = "INSERT INTO productor ('ID_productor','nombre_productor','apellido_productor','rut','correo','password','sexo','direccion','fecha_nacimiento','num_visitas','num_compras') VALUES ('','$nombre_cliente','$apellido_cliente','$rut','$correo','$password','$sexo','$direccion','$fecha_nacimiento','NULL','NULL')";
 
-	$resultado = mysqli_query($con, $consulta);
+	$resultado = mysqli_query($con, $consulta_add);
 
-	header("Location: perfil_productor.php");
+
+    
+	echo '<script>alert("Agregado con exito")</script>';
+    echo "<script>location.href='principal.php'</script>";
 
 ?>

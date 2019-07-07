@@ -46,13 +46,16 @@
     
     <h3 style="position: absolute; color: white; margin-top: 4%; margin-left: 35%;">Aqui tienes que escribir los datos de productor:</h3> 
       
-      <form action="agregar_productor.php" style="position: absolute; color: white; margin-left: 35%; margin-top: 8%; width: 40%;">
-       <label style="float:left;">Nombre productor:</label><input type="text" placeholder="Juanito" style="margin-left: 1%;"><br>
-       <label style="float:left;;">Apellido productor:</label><input type="text" placeholder="Perez" style="margin-left: 1%;"><br>
-       <label style="float:left;">Rut:</label><input type="text" placeholder="123456789" style="margin-left: 26%;"><br>
-       <label style="float:left;">Sexo:</label><input type="text" name="" value="" placeholder="M o F" style="margin-left: 24%;"><br>
-       <label style="float:left;">Direccion:</label><input type="text" style="margin-left: 16.5%;" placeholder="pasaje n°casa"><br>
-       <label style="float:left;">Fecha nacimiento:</label><input type="date" style="margin-left: -1%;" placeholder=""><br>
+      <form action="agregar_productor.php" style="position: absolute; color: white; margin-left: 35%; margin-top: 8%; width: 40%;" method="post">
+      
+       <label style="float:left;">Nombre productor:</label><input type="text" placeholder="Juanito" style="margin-left: 1%;" id="nombre_productor"><br>
+       <label style="float:left;;">Apellido productor:</label><input type="text" placeholder="Perez" style="margin-left: 1%;" id="apellido_productor"><br>
+       <label style="float:left;">Rut:</label><input type="text" placeholder="123456789" style="margin-left: 26%;" id="rut"><br>
+       <label style="float:left;">Correo:</label><input type="text" name="" value="" placeholder="example@example.com" style="margin-left: 21%;" id="correo"><br>
+       <label style="float:left;">Password:</label><input type="password" name="" value="" placeholder="******" style="margin-left: 16%;" id="password"><br>
+       <label style="float:left;">Sexo:</label><input type="text" name="" value="" placeholder="M o F" style="margin-left: 24%;" id="sexo"><br>
+       <label style="float:left;">Direccion:</label><input type="text" style="margin-left: 16.5%;" placeholder="pasaje n°casa" id="direccion"><br>
+       <label style="float:left;">Fecha nacimiento:</label><input type="date" style="margin-left: -1%;" placeholder="" id="fecha_nacimiento"><br>
        
        <input type="submit" value="Enviar" class="boton_enviar">
        

@@ -138,32 +138,29 @@ input#botonsito:hover
 }
 .co1{
     position: absolute;
-    float: left;
-    width: 50%;
-    height: 50%;
-    border-color: black;
-    border: solid;
+    width: 49%;
+    height: 49%;
 }
 
 .co2{
     float: left;
-    width: 50%;
-    height: 50%;
-    border-color: green;
+    width: 49%;
+    height: 49%;
+
 }
 
 .co3{
     float: left;
-    width: 50%;
-    height: 50%;
-    border-color: yellow;
+    width: 49%;
+    height: 49%;
+
 }
 
 .co4{
     float: left;
-    width: 50%;
-    height: 50%;
-    border-color: red;
+    width: 49%;
+    height: 49%;
+
 }
 h1{
 
