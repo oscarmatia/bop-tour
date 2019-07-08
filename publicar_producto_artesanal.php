@@ -1,6 +1,6 @@
 <?php
-	require('connect.php');
-	session_start();
+require('connect.php');
+session_start();
 ?>
 
 
@@ -38,7 +38,7 @@
 			<ul class="list-1">
 
 				<li class="li1" id="efect"><a href="publicar_producto_artesanal.php">Publicar producto artesanal</a></li>
-				<li class="li1" id="efect"><a href="mis_productos.php">Mis productos</a></li>
+				<li class="li1" id="efect"><a href="mis_avisos.php">Mis productos</a></li>
 
 			</ul>
 		</div>
@@ -74,8 +74,8 @@
 
 						<select name="categoria_producto" class="categoria" required>
 							<option value="Cervecita"> Cervecita </option>
-							<option value="Vino"> Vino </option>
-							<option value="Miel">Miel</option>
+							<option value="Alimento"> Alimento </option>
+							<option value="Producto lacteo">Producto lacteo</option>
 							<option value="Otro">Otro</option>
 
 						</select>

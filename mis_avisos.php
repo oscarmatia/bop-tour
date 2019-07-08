@@ -91,10 +91,12 @@ $resultado=mysqli_query($con,$consulta2);
 						}
 						?>
 
+
 					</table>
 
-
-
+					<a  href="publicar_producto_artesanal.php">
+						<input style="margin-right: 45%;" type="button" value="Volver" class="boton_gestionar">
+					</a>
 				</center>
 
 
