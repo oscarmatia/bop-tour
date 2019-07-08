@@ -264,3 +264,81 @@ input{
     border-color: darkgreen;
     cursor: pointer;
 }
+
+.central
+{
+	position: absolute;
+	
+	width: 15%;
+	height: 9%;
+	
+	margin-top:  45.4%;
+	margin-left: 44%;
+}
+
+
+.siguenos
+{
+	position: absolute;
+	
+	font-size: 14px;
+	
+	margin-left: 36%;
+	margin-top: 6%;
+	
+	color: dimgrey;
+}
+
+.facebook
+{	
+	position: absolute
+	
+	float: left;
+	
+	height: 80%;
+	width: 25%;
+	
+	margin-left: 5%;
+	margin-top: 12%;
+}
+
+.instagram
+{
+	position: absolute;
+	
+	float: left;
+	
+	height: 60%;
+	width: 29%;
+	
+	margin-top: 15%;
+	margin-left: 3%;
+}
+
+.twitter
+{
+	position: absolute;
+	
+	float: left;
+	
+	height:60%;
+	width: 35%;
+	
+	margin-right: 2%;
+	margin-left: 30%;
+	margin-top: 15%;
+}
+
+.footer
+{
+	background-color: wheat;
+	
+	position: absolute;
+	
+	height: 10%;
+	width: 100%;
+	
+	margin-top: 46.1%;
+	
+	opacity: 0.6;
+}

@@ -1,13 +1,14 @@
 <?php
-<<<<<<< HEAD
+    require('connect.php');
+    $con= conectar();
     session_start();
-    $conn = mysqli_connect("localhost", "root", "", "bop");
+
 
     $ID_productor = $_POST['ID_productor'];
 
     $consulta20 =  "SELECT * FROM productor WHERE ID_productor='$ID_productor'";
 
-    $resultado20 = mysqli_query($conn, $consulta20);
+    $resultado20 = mysqli_query($con, $consulta20);
 
     while($row = mysqli_fetch_assoc($resultado20)){
         
@@ -24,11 +25,9 @@
         $num_compras = $row["num_compras"];
         
     }
-=======
-    require('connect.php');
-    $con= conectar();
-	session_start();
->>>>>>> 23cb626a34941820e449627b2b7553830d652ecd
+
+    
+    
 ?>
 
 <!DOCTYPE html>
@@ -117,24 +116,24 @@
                        
         </div>
     </div>
-    <footer class="footer">
-     <div class="siguenos">
-           <b>Siguenos</b>
-     <center>
-     
-         <a href="https://www.facebook.com/Bop-tour-391667081681891/?modal=admin_todo_tour" target="_blank">    
-             <img src="fb.png" alt="" class="facebook">
-         </a>
+    
+    <footer class="footer"></footer>
+		<div class="central">
+			
+				<div class="siguenos">
+					<b>Siguenos</b>				</div>
+			
+				<a href="https://www.facebook.com/Bop-tour-391667081681891/?modal=admin_todo_tour" target="_blank">
+					<img src="fb.png" alt="" class="facebook">
+				</a>
 				
-         <a href="https://www.instagram.com/bop_tour/" target="_blank">
-             <img src="insta.png" alt="" class="instagram">
-         </a>
+				<a href="https://www.instagram.com/bop_tour/" target="_blank">
+					<img src="insta.png" alt="" class="instagram">
+				</a>
 				
-         <a href="https://twitter.com/BopTour" target="_blank">
-		     <img src="twitter.png" alt="" class="twitter">
-         </a>
-        </center>
-    </div>
-   </footer>
+				<a href="https://twitter.com/BopTour" target="_blank">
+					<img src="twitter.png" alt="" class="twitter">
+				</a>
+		</div>
 </body>
 </html>
