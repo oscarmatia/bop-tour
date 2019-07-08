@@ -1,295 +1,184 @@
-*{
-    margin: 0;
-	font-family: 'Roboto', sans-serif;	
-    overflow-y: scroll;
+* {
+	margin: 0;
+}
+html {
+	font-family: Josefin Sans;
 }
 
-.contenedor{
-  position: absolute;
-  background-image: url(camino_campo.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
 
-.barra_navegacion
-{
-	background-color: black;
-	
-	position: absolute;
-	
-	height: 8%;
-	width: 100%;
-	
-	opacity: 0.4;
-}
-
-.logo{
-	position: absolute;
-	
-	height: 90%;
-	width: 3.5%;
-	
-	margin-left: 1%;
-	margin-top: 0.2%;
-}
-
-.perfil_imagen{
-    position: absolute;
-	background-color: azure;
-	border-radius: 100%;
-	height: 6%;
-	width: 3.3%;
-	margin-left: 68%;
-	margin-top: 0.3%;
-}
-
-.sesion_usuario{
-    position: absolute;
+html, body {
+	height: 100%;
+	background-color: white;
 	color: white;
-	
-	height: 4.5%;
-	width: 14%;
-	
-	margin-left: 70%;
-	margin-top: 0.5%;
-	padding-top: 0.7%;
-    
-    display: block;
-    text-align: -webkit-center;
-}
-
-.boton{
-    position: absolute;
-	margin-top: 0.2%;
-	margin-left: 88.5%;
-    cursor: pointer;
-}
-
-input#botonsito
-{
-	padding: 12px 30px 15px;
-	color: white;
-	font-size: 1em;
-	background-color: #c79d29;
-	border: 0px;
-	-webkit-border-radius:5px;
-	-webkit-box-shadow: 0px 4px 0px #a58325;
-	-webkit-transition: background-color .25s;
+	font-family: Josefin Sans;
 }
 
 
-input#botonsito:hover
-{
-	background-color: #e3ae1a;
-    cursor: pointer;
-}
 
-
-.central
-{
-	position: absolute;
-	
-	width: 15%;
-	height: 9%;
-	
-	margin-top:  45.4%;
-	margin-left: 44%;
-}
-
-
-.siguenos
-{
-	position: absolute;
-	
-	font-size: 14px;
-	
-	margin-left: 36%;
-	margin-top: 6%;
-	
-	color: dimgrey;
-}
-
-.facebook
-{	
-	position: absolute
-	
-	float: left;
-	
-	height: 80%;
-	width: 25%;
-	
-	margin-left: 5%;
-	margin-top: 12%;
-}
-
-.instagram
-{
-	position: absolute;
-	
-	float: left;
-	
-	height: 60%;
-	width: 29%;
-	
-	margin-top: 15%;
-	margin-left: 3%;
-}
-
-.twitter
-{
-	position: absolute;
-	
-	float: left;
-	
-	height:60%;
-	width: 35%;
-	
-	margin-right: 2%;
-	margin-left: 30%;
-	margin-top: 15%;
-}
-
-
-.footer
-{
-	background-color: wheat;
-	
-	position: absolute;
-	
-	height: 10%;
-	width: 100%;
-	
-	margin-top: 46.1%;
-	
-	opacity: 0.6;
-}
-
-.refe{
-    position: absolute;
-    color: white;
-    margin-left: 6%;
-    margin-top: 1%;
-}
-
-.caja_grande,barra-4{
+.barra-3,barra-4{
 	color: #444444;
-}
-
-.logo, img{
-	padding: 0px 0px 0px 10px;
-
-	width: 45px;
-	cursor: pointer;
-
-}
-img{
-	padding: 11;
-
 }
 
 input[type=text], select,textarea{
 
-	font-size: 14px;
-	color: black;
+	font-size: 15px;
+	color: grey;
 
 }
 
+.barra-1{ /*barra de navegacion, iniciar sesion*/
+	width: 100%;
+	height: 10%;
+	/*background-color: gray;*/
+	display: inline-block;
+	box-shadow: inherit;
+	position: relative;
+	background-color: black;
+	opacity: 0.4;
 
+}
+
+/*
+.boton-iniciar-sesion{
+	width: 130px;
+	height: 48px;
+	background: lightgreen;
+	color: black;
+	text-align: center;
+	border:1px black solid;
+	padding: 12px 20px ;
+	font-size: 13px;
+	text-decoration: none;
+	border-radius: 100px;
+	float: right;
+	margin: -3.6% 1%;
+	cursor: pointer;
+}
+
+
+.boton-iniciar-sesion:hover{
+	color:green;
+
+}
+*/
+.logo, img{
+	padding-left: 1%;
+	margin-top: 0.6%;
+	margin-left: 2%;
+	width: 45px;
+	cursor: pointer;
+}
+
+.ir-a-inicio{
+
+	color: black;
+	text-align: center;
+	padding: 12px 20px ;
+	font-size: 16px;
+	/*text-decoration: none;*/
+	float: right;
+	margin: -3.3% 1%;
+	cursor: pointer;
+	/*background-color: red;*/
+	margin-top: -3.5%;
+
+}
 
 .barra-2{
-    position: absolute;
-    width: 100%;
-    height: 10%;
-}
 
-
-.arriba{
-    margin-top: 4%;
 	width: 100%;
 	height: 7.5%;
+	/*background-color: lightgray;*/
 	display: inline-block;
+	border: 1px solid black;
 	position: relative;
-	text-decoration: none;
-	padding-top: 0.5%;
-
 }
-
 
 .list-1{
 	margin-left: 1%;
-	text-decoration: none;
 
 }
 .li1{
 	display: inline-block;
-	text-decoration: none;
-
-
+	margin-left: 0.5%;
+	margin-top: 0.8%;
 }
 #efect{
 	border-bottom: 1px solid black;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 
 
-.arriba li a{
-	margin-top: 1%;	
-	color: white;
+.barra-2 li a{
+	margin-top: -6%;
+	background-color:white;
+	color: gray;
 	text-decoration:none;
 	padding:10px 10px;
 	display:block;
-    
 }
 
-.arriba li a:hover{
+.barra-2 li a:hover{
 	background-color: black;
 }
 
-.titulo{
-	margin-top: 1%;
+.promociona-text{
+	margin-top: 2%;
+	/*background-color: red;*/
 	font-size: 15px;
 	display: inline-block;
-	width: 90%;
-	margin-left: 5%;
+	width: 45%;
+	margin-left: 4%;
 	position: relative;
+
 }
 
 
-.caja_grande{
+.barra-3{
 	width: 100%;
-	height:80%;
+	height:85%;
+	/*background-color: gray;*/
+
 
 }
 
 .cuadrado-1{
 	margin-top: 2%;
+	/*background-color: yellow;*/
 	width: 90%;
 	height: 80%;
-	margin-left: 5%;
+	margin-left: 4%;
 	position: relative;
 	font-size: 18px;
+	-webkit-box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
+	-moz-box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
+	box-shadow: 12px 10px 6px -6px rgba(25,32,33,1);
 	color: white;
-    border: solid;
-    border-color: black;
-    border-radius: 6%;
+	border: 1px solid black;
+	background-color: black;
+	opacity: 0.7;
 }
 .info-p{
+	margin-left: 5%;
+	/*background-color: white;*/
 	width: 90%;
-	margin-top: 2%;
-    margin-left: 4%;
+	margin-top: 3%;
+	padding-top: 3%;
+
 }
 
 .categoria-producto{
 	margin-left: 5%;
-	margin-top: 3%;
+	margin-top: 7%;
+	/*	background-color: white;*/
 	width: 90%;
-	
+
 }
 .cat-p{
 	display: inline-block;
+
+
 }
 .categoria{
 	display: inline-block;
@@ -300,8 +189,9 @@ input[type=text], select,textarea{
 .cont-titulo{
 	display: inline-block;
 	width: 90%;
+	/*background-color: blue;*/
 	margin-left: 5%;
-	margin-top: 3%;
+	margin-top: 7%;
 
 }
 
@@ -330,28 +220,29 @@ input[type=text], select,textarea{
 
 #text-area{
 	display: flex;
-	width: 90%;
+	width: 50%;
 
 
 }
 
 textarea{
-	margin-left: 23%; 
-	width: 90%;
+	margin-left: 38%;
+	width: 150%;
 
 }
 
 .cont-descripcion{
 	display: inline-block;
-	width: 78%;
+	width: 90%;
 	margin-top: 7%;
-
+	/*	background-color: red;*/
 	margin-left: 5%;
 }
 
 
 .sub-cuadrado{
 
+	/*	background-color: lightgray;*/
 	width: 50%;
 	height: 90%;
 	padding-bottom: 1%;
@@ -360,61 +251,69 @@ textarea{
 
 .sub-cuadrado2{
 	display: inline-block;
-
+	/*background-color: gray;*/
 	width: 50%;
-	height: 95%;
+	height: 90%;
 	float: right;
 	margin-top: -33.7%;
-	padding-top: 3%; 
+	padding-top: 3%;
 }
 
 
 .cont-precio{
 	display: inline-block;
-	width: 90%;
-
+	width: 70%;
+	/*background-color: blue;*/
 	margin-left: 5%;
 	margin-bottom: 15%;
-	margin-top: 32%;
+	margin-top: 13.5%;
 
 }
 
 .pre{
+
 	display: inline-block;
+	font-size: 18px;
 	width: 30%;
 
 }
 
 #precio, #cantidad{
-	width: 50%;
+	width: 45%;
 
 }
 
 .cont-cant{
 	display: inline-block;
-	width: 90%;
-
+	width: 70%;
+	/*background-color: blue;*/
 	margin-left: 5%;
+
+
+
 }
 
 .cant{
+
 	display: inline-block;
+	font-size: 18px;
 	width: 30%;
+
 }
 
 
 
 .cont-imagen{
 	display: inline-block;
-	width: 90%;
-	margin-top: 2%;
+	width: 60%;
+	margin-top: 8%;
 	margin-left: 5%;
 }
 
 .select-img{
 
 	display: inline-block;
-    
+	font-size: 18px;
 	margin-right: 1%;
 	width: 40%;
 }
@@ -425,11 +324,12 @@ textarea{
 	text-align: center;
 }
 
-.subir_imagen{ 
+.subir_imagen{
 	display: inline-block;
-	height: 50px;
-	width:  200px; 
+	height: 60px;
+	width:  100px;
 	margin: 0%;
+	box-shadow: 0px 0px 2px 2px grey;
 	position: relative;
 	padding: 10px;
 }
@@ -445,6 +345,7 @@ textarea{
 	bottom: 0px;
 	opacity: 0;
 	cursor: pointer;
+
 
 }
 
@@ -464,7 +365,7 @@ textarea{
 	margin-top: 7%;
 	/*	background-color: white;*/
 	width: 90%;
-	
+
 }
 .cat-r{
 	display: inline-block;
@@ -481,7 +382,7 @@ textarea{
 	margin-top: 5%;
 	/*	background-color: white;*/
 	width: 90%;
-	
+
 }
 
 .cat-c{
@@ -496,7 +397,7 @@ textarea{
 
 
 .boton-promocionar{
-	background-color: black;
+	background-color: red;
 	width: 100%;
 	height: 20%;
 	display: inline-block;
@@ -532,8 +433,17 @@ textarea{
 }
 
 
+.imagen-campo{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	margin-left: -1%;
+	margin-top: -1%;
+}
+
 
 .sep{
 
 	margin-top: 1%;
 }
+
