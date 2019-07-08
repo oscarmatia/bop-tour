@@ -1,10 +1,11 @@
 <?php 
-include 'connect.php';
-$con = conectar();
-session_start();
+    include 'connect.php';
+    $con = conectar();
+    session_start();
 
-$consulta2='SELECT ID_producto_artesanal, nombre_producto, cantidad, descripcion,precio,comuna,categoria_producto from producto_artesanal';
-$resultado=mysqli_query($con,$consulta2);
+    $consulta2='SELECT ID_producto_artesanal, nombre_producto, cantidad, descripcion,precio,comuna,categoria_producto from producto_artesanal';
+
+    $resultado=mysqli_query($con,$consulta2);
 
 ?>
 
@@ -13,60 +14,46 @@ $resultado=mysqli_query($con,$consulta2);
 <head>
 	<meta charset="UTF-8">
 	<title>Mis Productos</title>
+	<link rel="stylesheet" type="text/css" href="mis_productos.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
 </head>
-<link rel="stylesheet" type="text/css" href="publicar_producto_artesanal.css">
-<link rel="stylesheet" type="text/css" href="mis_productos.css">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
 <body>
 
 
 
-	<img class="imagen-campo" src="camino_campo.jpg">
-
-
-	<div class="barra-1">
-
-		<div class="barra_navegacion">
+	<img src="camino_campo.jpg" alt="" class="imagen_fondo">
+	<div class="barra_navegacion">
+		<a href="principal_registrado.php">
 			<img src="logo.png" alt="" class="logo">
-		</div>
-		<img src="perfil.jpg" alt="" class="perfil_imagen" style="margin-bottom: 1%;">
-		
-		<div class="sesion_usuario">
-			<center>
-
-				<?php
-				echo $_SESSION['nombre_productor'];
-				echo ' ';
-				echo $_SESSION['apellido_productor'];    
-				?>
-
-			</center>
-		</div>
-		<form action="cerrar_sesion.php" method="post">
-
-			<div class="boton">
-				<input type="button" value="Cerrar Sesión" id="botonsito" onclick="redireccion_cerrar_sesion()">
-			</div>
-
-		</form>
-
-
+		</a>
 	</div>
-
+	<a href="perfil_usuario.php">
+		<img src="perfil.jpg" alt="" class="perfil_imagen">
+	</a>
+	<div class="sesion_usuario">
+		<center>
+			Hola
+			<?php
+			echo $_SESSION['nombre_cliente'];
+			?>
+		</center>
+	</div>
+	<form action="cerrar_sesion.php" method="post">
+		<div class="boton">
+			<input type="button" value="Cerrar Sesion" id="botonsito" onclick="redireccion_cerrar_sesion()"> 
+		</div>
+	</form>
 
 
 	<div class="barra-2">
 
 		<div>
 			<ul class="list-1">
-
 				<li class="li1" id="efect"><a href="publicar_producto_artesanal.php">Publicar producto artesanal</a></li>
 				<li class="li1" id="efect"><a href="">Mis productos</a></li>
 
 			</ul>
 		</div>	
-
-
 
 	</div>
 

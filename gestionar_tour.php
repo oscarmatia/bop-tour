@@ -1,10 +1,21 @@
+<?php
+    require('connect.php');
+    session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="gestionar_tour.css">
+	    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="redireccion_cerrar_sesion.js"></script>
 </head>
-<link rel="stylesheet" type="text/css" href="gestionar_tour.css">
+
 <body>
 
 	<img src="camino_campo.jpg" alt="" class="imagen_fondo">
@@ -67,7 +78,7 @@
 				<input name="cantidad2"id="cantidad2" type="text"  required>  
 			</div>	
 			<a  href="gestionar_tour.php">
-				<input type="button" value="Gestionar" style="color: white; background-color: green; border: solid; border-color: green; text-align: center; margin-top: 12%; margin-left: 50%; padding-left: 4%; padding-right: 5%;padding-top: 2%; padding-bottom: 2%; float: right; margin-right: 36%;">
+				<input type="button" value="Gestionar" class="boton_gestionar">
 			</a>
 
 
