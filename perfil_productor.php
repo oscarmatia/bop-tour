@@ -6,8 +6,7 @@
     $var = $_SESSION['ID_productor'];
     
 
-    $consulta2='SELECT ID_producto_artesanal, nombre_producto, cantidad, descripcion,precio,comuna,categoria_producto from producto_artesanal';
-    $resultado=mysqli_query($con,$consulta2);
+    
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -93,31 +92,35 @@
         <center>
 
 
-            <table class="tablita" style="color: white">
+            <table class="tablita" style="color: white; text-align: center;">
 
                 <tr style="margin-left: 2%;">
-
-                    <th class="eu">Id</th>
-                    <th class="eu">nombre</th>
+                    <th class="eu">Imagen</th>
+                    <th class="eu">Nombre</th>
                     <th class="eu">Cantidad</th>
                     <th class="eu">Descripción</th>
                     <th class="eu">Precio</th>
-                    <th class="eu">Comuna</th>
                     <th class="eu">Categoria</th>
 
                 </tr>
 
                 <?php
-                while($fila=mysqli_fetch_array($resultado)){
-                    echo "<tr>";
-                    echo "<td>".$fila["ID_producto_artesanal"]."</td>";
-                    echo "<td>".$fila["nombre_producto"]."</td>";
-                    echo "<td>".$fila["cantidad"]."</td>";
-                    echo "<td>".$fila["descripcion"]."</td>";
-                    echo "<td>".$fila["precio"]."</td>";
-                    echo "<td>".$fila["comuna"]."</td>";
-                    echo "<td>".$fila["categoria_producto"]."</td>";
-                    echo "</tr>";
+                
+                $consulta_products = "SELECT * FROM producto_artesanal WHERE ID_productor='$var'";
+                
+                $resultado_products=mysqli_query($con,$consulta_products);
+                
+                while($fila_products=mysqli_fetch_array($resultado_products)){
+                ?>
+                <tr>
+                    <td><img src="Images/<?php echo $fila_products['imagen']; ?>" height="20px"></td>
+                    <td><?php echo $fila_products['nombre_producto']; ?></td>
+                    <td><?php echo $fila_products['cantidad']; ?></td>
+                    <td><?php echo $fila_products['descripcion']; ?></td>
+                    <td><?php echo $fila_products['precio']; ?></td>
+                    <td><?php echo $fila_products['categoria_producto']; ?></td>
+                </tr>
+                <?php
                 }
                 ?>
 
@@ -138,7 +141,7 @@
     <i class="material-icons" id="icon3">
         add_circle
     </i>
-    <a href="actualizar_stock.php" style="color: white;" id="text3">Actualizar stock</a>
+    <a href="actualizar_stock.php?ID_productor=<?php echo $_SESSION['ID_productor']; ?>" style="color: white;" id="text3">Actualizar stock</a>
 </div>
 
 </div>

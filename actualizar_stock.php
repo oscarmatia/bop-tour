@@ -2,7 +2,8 @@
     require('connect.php');
     session_start();
     $con = conectar();
-
+    
+    $ID_productor = $_GET['ID_productor'];
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -45,35 +46,26 @@
     <h2 style="color: white; position: fixed; margin-top: 5%; margin-left: 7%;">Actualizar Inventario</h2>
    
         <b style="position: absolute; color: white; margin-top: 16%; margin-left: 8%;">Aqui se vera un listado de tus productos y el stock correspondiente, podras sobrescribir el stock para modificarlo</b>
-        <form action="actualiza_stock.php">
+        <form action="actualiza_stock.php?ID_productor=<?php echo $_SESSION['ID_productor']; ?>" method="post">
         <table class="tablita">
             <tr>
                 <th>Producto</th>
                 <th>Stock</th>
             </tr>
-            <tr>
-                <th>producto1</th>
-                <th><input type="number" value="5" placeholder="5"></th>
-            </tr>
-            <tr>
-                <th>producto2</th>
-                <th><input type="number" value="6" placeholder="6"></th>
-            </tr>
-<!--
-<?php
-                $consulta_act = "SELECT * FROM producto_artesanal WHERE ID_productor ='$ID_productor'";
+            <?php
+                $consulta_refresh = "SELECT * FROM producto_artesanal WHERE ID_productor = '$ID_productor'";
             
-                $resultado_act = mysqli_query($con, $consulta_act);
-                       
-                while($row = mysqli_fetch_assoc($resultado_act)){
-                    
-                echo "<tr>";
-                echo "<td>".$row["nombre_producto"]."</td>";
-                echo "<td>".$row["cantidad"]."</td>";
-                echo "</tr>";
+                $resultado_refresh = mysqli_query($con, $consulta_refresh);
+            
+                while($row_refresh = mysqli_fetch_assoc($resultado_refresh)){
+            ?>
+            <tr>
+                <td><?php echo $row_refresh['nombre_producto']; ?></td>
+                <td><input type="number" name="cantidad" value="<?php echo $row_refresh['cantidad']; ?>"></td>
+            </tr>
+            <?php   
                 }
-?>
--->
+            ?>
         </table>
         <br>
         <input id="boton_update" type="submit" value="Actualizar Stock">
