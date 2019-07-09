@@ -2,6 +2,23 @@
     require('connect.php');
     $con = conectar();
     session_start();
+
+    $ID_cliente = $_GET["ID_cliente"];
+
+    $consulta_editar_perfil_cliente =  "SELECT * FROM cliente WHERE ID_cliente='$ID_cliente'";
+
+    $resultado_editar_perfil_cliente = mysqli_query($con, $consulta_editar_perfil_cliente);
+
+    while($row = mysqli_fetch_assoc($resultado_editar_perfil_cliente)){
+        
+        $nombre_cliente = $row["nombre_cliente"];
+        $apellido_cliente = $row["apellido_cliente"];
+        $sexo = $row["sexo"];
+        $direccion = $row["direccion"];
+        $fecha_nacimiento = $row["fecha_nacimiento"];
+        $puntos = $row["puntos"];
+        $ID_cliente = $row["ID_cliente"];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -48,14 +65,14 @@
     
     <h3 style="position: absolute; color: white; margin-top: 4%; margin-left: 35%;">Aqui puedes modificar los datos:</h3> 
       
-      <form action="" style="position: absolute; color: white; margin-left: 35%; margin-top: 8%;">
-       <input type="text" name="" value="<?php echo $nombre_cliente ?>" id="nombre" size="40"> <br>
-       <input type="text" name="" value="<?php echo $apellido_cliente ?>" id="apellido" size="40"><br>
-       <input type="text" name="" value="<?php echo $sexo ?>" id="sexo" size="40"><br>
-       <input type="text" name="" value="<?php echo $direccion ?>" id="direccion" size="40"><br>
-       <input type="text" name="" value="<?php echo $fecha_nacimiento ?>" id="fecha_nacimiento" size="40"><br>
-       <input type="text" name="" value="<?php echo $puntos ?>" id="num_visitas" size="40"><br>
-       <input type="hidden" name="" value="<?php echo $ID_cliente ?>" id="id" size="40"> <br>
+      <form action="modificar_cliente.php" style="position: absolute; color: white; margin-left: 35%; margin-top: 8%;" method="post">
+       <input type="text" name="nombre_cliente" value="<?php echo $nombre_cliente ?>" id="nombre" size="40"> <br>
+       <input type="text" name="apellido_cliente" value="<?php echo $apellido_cliente ?>" id="apellido" size="40"><br>
+       <input type="text" name="sexo" value="<?php echo $sexo ?>" id="sexo" size="40"><br>
+       <input type="text" name="direccion" value="<?php echo $direccion ?>" id="direccion" size="40"><br>
+       <input type="text" name="fecha_nacimiento" value="<?php echo $fecha_nacimiento ?>" id="fecha_nacimiento" size="40"><br>
+       <input type="text" name="puntos" value="<?php echo $puntos ?>" id="num_visitas" size="40"><br>
+       <input type="hidden" name="ID_cliente" value="<?php echo $ID_cliente ?>" id="id" size="40"> <br>
        
        <input type="submit" value="Editar perfil" class="boton_edit">
        

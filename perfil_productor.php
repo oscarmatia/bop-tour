@@ -2,6 +2,7 @@
     require('connect.php');
     session_start();
     $con= conectar();
+
     $consulta2='SELECT ID_producto_artesanal, nombre_producto, cantidad, descripcion,precio,comuna,categoria_producto from producto_artesanal';
     $resultado=mysqli_query($con,$consulta2);
 ?>

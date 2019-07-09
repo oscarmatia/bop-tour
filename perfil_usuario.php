@@ -48,7 +48,7 @@
                 echo ' ';
 ?>
                 </p>                
-            <a href="editar_perfil_usuario.php" id="perfil">Editar perfil</a>
+            <a href="editar_perfil_usuario.php?ID_cliente=<?php echo $_SESSION['ID_cliente']; ?>" id="perfil">Editar perfil</a>
         </center>
 	    </div>
       <ul class="lista">
