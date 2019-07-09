@@ -58,7 +58,7 @@
             echo $_SESSION['apellido_productor'];   
             ?>
         </b>   
-        <a href="editar_perfil_productor.php" id="perfil">Editar perfil</a>
+        <a href="editar_perfil_productor.php?ID_productor=<?php echo $_SESSION['ID_productor']; ?>" id="perfil">Editar perfil</a>
     </center>
 </div>
 <hr align="center" class="linea">

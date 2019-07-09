@@ -2,6 +2,24 @@
     require('connect.php');
     $con = conectar();
     session_start();
+
+    $ID_productor = $_GET["ID_productor"];
+
+    $consulta_editar_perfil =  "SELECT * FROM productor WHERE ID_productor='$ID_productor'";
+
+    $resultado_editar_perfil = mysqli_query($con, $consulta_editar_perfil);
+
+    while($row = mysqli_fetch_assoc($resultado_editar_perfil)){
+        
+        $nombre_productor = $row["nombre_productor"];
+        $apellido_productor = $row["apellido_productor"];
+        $sexo = $row["sexo"];
+        $direccion = $row["direccion"];
+        $fecha_nacimiento = $row["fecha_nacimiento"];
+        $num_visitas = $row["num_visitas"];
+        $num_compras = $row["num_compras"];
+        $ID_productor = $row["ID_productor"];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -48,15 +66,16 @@
     
     <h3 style="position: absolute; color: white; margin-top: 4%; margin-left: 35%;">Aqui puedes modificar los datos:</h3> 
       
-      <form action="" style="position: absolute; color: white; margin-left: 35%; margin-top: 8%;">
-       <input type="text" name="" value="<?php echo $nombre_productor ?>" id="nombre" size="40"> <br>
-       <input type="text" name="" value="<?php echo $apellido_productor ?>" id="apellido" size="40"><br>
-       <input type="text" name="" value="<?php echo $sexo ?>" id="sexo" size="40"><br>
-       <input type="text" name="" value="<?php echo $direccion ?>" id="direccion" size="40"><br>
-       <input type="text" name="" value="<?php echo $fecha_nacimiento ?>" id="fecha_nacimiento" size="40"><br>
-       <input type="text" name="" value="<?php echo $num_visitas ?>" id="num_visitas" size="40"><br>
-       <input type="text" name="" value="<?php echo $num_compras ?>" id="num_compras" size="40"><br>
-       <input type="hidden" name="" value="<?php echo $ID_productor ?>" id="id" size="40"> <br>
+      <form action="modificar_productor.php" style="position: absolute; color: white; margin-left: 35%; margin-top: 8%;" method="post">
+      
+       <input type="text" name="nombre_productor" value="<?php echo $nombre_productor ?>" id="nombre" size="40"> <br>
+       <input type="text" name="apellido_productor" value="<?php echo $apellido_productor ?>" id="apellido" size="40"><br>
+       <input type="text" name="sexo" value="<?php echo $sexo ?>" id="sexo" size="40"><br>
+       <input type="text" name="direccion" value="<?php echo $direccion ?>" id="direccion" size="40"><br>
+       <input type="text" name="fecha_nacimiento" value="<?php echo $fecha_nacimiento ?>" id="fecha_nacimiento" size="40"><br>
+       <input type="text" name="num_visitas" value="<?php echo $num_visitas ?>" id="num_visitas" size="40"><br>
+       <input type="text" name="num_compras" value="<?php echo $num_compras ?>" id="num_compras" size="40"><br>
+       <input type="hidden" name="ID_productor" value="<?php echo $ID_productor ?>" id="id" size="40"> <br>
        
        <input type="submit" value="Editar perfil" class="boton_edit">
        
