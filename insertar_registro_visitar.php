@@ -1,7 +1,8 @@
 <?php
 
-	
-	$conexion = mysqli_connect("localhost", "root", "", "bop");
+	require('connect.php');
+	$con = conectar();
+    session_start();
 
 	$nombre_cliente = $_POST['nombre_cliente'];
 	$apellido_cliente= $_POST['apellido_cliente'];
@@ -13,9 +14,9 @@
 	$sexo=$_POST['sexo'];
 
 	
-	$consulta = "INSERT INTO cliente (`ID_cliente`,`nombre_cliente`,`apellido_cliente`,`rut`,`correo`,`sexo`,`password`,`direccion`,`fecha_nacimiento`,`puntos`) VALUES ('','$nombre_cliente','$apellido_cliente','$rut','$correo','$sexo','$password','NULL','$fecha_nacimiento','NULL')";
+	$consulta_insertar = "INSERT INTO cliente (ID_cliente, nombre_cliente, apellido_cliente, rut, correo, sexo , password , direccion, fecha_nacimiento, puntos) VALUES ('','$nombre_cliente','$apellido_cliente','$rut','$correo','$sexo','$password','NULL','$fecha_nacimiento','NULL')";
 
-	$resultado = mysqli_query($conexion, $consulta);
+	$resultado_insertar = mysqli_query($con, $consulta_insertar);
 
 	header("Location: iniciar_sesion_visitar.php");
 

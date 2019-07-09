@@ -7,7 +7,7 @@
     $con = conectar();
 
 	$nombre_productor = $_POST['nombre_productor'];
-	$apellido_cliente= $_POST['apellido_productor'];
+	$apellido_productor= $_POST['apellido_productor'];
 	$rut = $_POST['rut'];
 	$correo =$_POST['correo'];
 	$password =$_POST['password'];
@@ -17,9 +17,9 @@
 	
 
 	
-	$consulta_add = "INSERT INTO productor ('ID_productor','nombre_productor','apellido_productor','rut','correo','password','sexo','direccion','fecha_nacimiento','num_visitas','num_compras') VALUES ('','$nombre_cliente','$apellido_cliente','$rut','$correo','$password','$sexo','$direccion','$fecha_nacimiento','NULL','NULL')";
+	$consulta_add = "INSERT INTO productor (ID_productor, nombre_productor, apellido_productor, rut, correo, password, sexo, direccion, fecha_nacimiento , num_visitas, num_compras) VALUES ('','$nombre_productor','$apellido_productor','$rut','$correo','$password','$sexo','$direccion','$fecha_nacimiento','NULL','NULL')";
 
-	$resultado = mysqli_query($con, $consulta_add);
+	$resultado_add = mysqli_query($con, $consulta_add);
 
 
     

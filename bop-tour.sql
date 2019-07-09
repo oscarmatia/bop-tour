@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-06-2019 a las 23:42:53
--- Versión del servidor: 10.1.39-MariaDB
--- Versión de PHP: 7.3.5
+-- Tiempo de generación: 08-07-2019 a las 03:11:44
+-- Versión del servidor: 10.1.37-MariaDB
+-- Versión de PHP: 7.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `bop`
+-- Base de datos: `bop-tour`
 --
 
 -- --------------------------------------------------------
@@ -60,9 +60,7 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`ID_cliente`, `nombre_cliente`, `apellido_cliente`, `rut`, `correo`, `sexo`, `password`, `direccion`, `fecha_nacimiento`, `puntos`) VALUES
-(1, 'gaspar', 'perez', '192751950', 'operez@ing.ucsc.cl', 'masculino', '12345', 'heras 1140 depto 601', '2019-06-04', 0),
-(2, 'Oscar', 'Perez', '192751950', 'operez@ing.ucsc.cl', 'H', '1234', 'NULL', '2018-11-30', 0),
-(3, 'claudia', 'perez', '192751950', 'operez@ing.ucsc.cl', 'M', '123', 'NULL', '1996-12-11', 0);
+(1, 'oscar', 'perez', '19275195', 'operez@ing.ucsc.cl', 'm', '123', 'heras 1140', '2019-06-04', 1);
 
 -- --------------------------------------------------------
 
@@ -130,7 +128,8 @@ CREATE TABLE `productor` (
 --
 
 INSERT INTO `productor` (`ID_productor`, `nombre_productor`, `apellido_productor`, `rut`, `correo`, `password`, `sexo`, `direccion`, `fecha_nacimiento`, `num_visitas`, `num_compras`) VALUES
-(1, 'Oscar', 'Perez', '19275195', 'operez@ing.ucsc.cl', '12345', 'masculino', 'heras 1140', '1996-08-23', 1, 1);
+(1, 'pedro', 'ormeño', '19811237', 'pormeno@ing.ucsc.cl', '123', 'm', 'heras 1140', '2019-06-11', 34, 56),
+(2, 'bayron', 'raggio', '18414626', 'braggio@ing.ucsc.cl', '123', 'm', 'chigua', '2019-01-01', 10, 20);
 
 -- --------------------------------------------------------
 
@@ -145,8 +144,20 @@ CREATE TABLE `producto_artesanal` (
   `imagen` varchar(50) NOT NULL,
   `cantidad` int(8) NOT NULL,
   `descripcion` varchar(50) NOT NULL,
-  `precio` int(10) DEFAULT NULL
+  `precio` int(10) DEFAULT NULL,
+  `cut_comuna` int(4) NOT NULL,
+  `cut_region` int(4) NOT NULL,
+  `region` varchar(30) NOT NULL,
+  `comuna` varchar(30) NOT NULL,
+  `categoria_producto` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `producto_artesanal`
+--
+
+INSERT INTO `producto_artesanal` (`ID_producto_artesanal`, `nombre_producto`, `ID_productor`, `imagen`, `cantidad`, `descripcion`, `precio`, `cut_comuna`, `cut_region`, `region`, `comuna`, `categoria_producto`) VALUES
+(15, 'cermeza', 2, '', 2, 'cerveza 2', 12000, 2, 3, 'Biobio', 'Chiguayante', 'cerveza');
 
 -- --------------------------------------------------------
 
@@ -193,10 +204,19 @@ CREATE TABLE `tienda` (
   `ID_tienda` int(4) NOT NULL,
   `nombre_tienda` varchar(40) NOT NULL,
   `ubicacion` varchar(40) NOT NULL,
+  `latitud` varchar(20) NOT NULL,
+  `longitud` varchar(20) NOT NULL,
   `ID_productor` int(4) NOT NULL,
   `rubro` varchar(30) NOT NULL,
   `imagen` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `tienda`
+--
+
+INSERT INTO `tienda` (`ID_tienda`, `nombre_tienda`, `ubicacion`, `latitud`, `longitud`, `ID_productor`, `rubro`, `imagen`) VALUES
+(1, 'mall dichato', 'heras 1123', '', '', 1, 'venta', '');
 
 --
 -- Índices para tablas volcadas
@@ -247,7 +267,9 @@ ALTER TABLE `productor`
 --
 ALTER TABLE `producto_artesanal`
   ADD PRIMARY KEY (`ID_producto_artesanal`),
-  ADD KEY `fk_productor` (`ID_productor`);
+  ADD UNIQUE KEY `cut_region` (`cut_region`),
+  ADD KEY `fk_productor` (`ID_productor`),
+  ADD KEY `fk_comuna` (`cut_comuna`) USING BTREE;
 
 --
 -- Indices de la tabla `promocion`
@@ -290,7 +312,7 @@ ALTER TABLE `calificacion`
 -- AUTO_INCREMENT de la tabla `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `ID_cliente` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_cliente` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `locomocion`
@@ -308,13 +330,13 @@ ALTER TABLE `lugar turistico`
 -- AUTO_INCREMENT de la tabla `productor`
 --
 ALTER TABLE `productor`
-  MODIFY `ID_productor` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID_productor` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `producto_artesanal`
 --
 ALTER TABLE `producto_artesanal`
-  MODIFY `ID_producto_artesanal` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_producto_artesanal` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de la tabla `promocion`
@@ -326,7 +348,7 @@ ALTER TABLE `promocion`
 -- AUTO_INCREMENT de la tabla `tienda`
 --
 ALTER TABLE `tienda`
-  MODIFY `ID_tienda` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_tienda` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Restricciones para tablas volcadas

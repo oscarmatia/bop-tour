@@ -5,7 +5,7 @@ session_start();
 
 $consulta2='SELECT ID_producto_artesanal, nombre_producto, cantidad, descripcion,precio,comuna,categoria_producto from producto_artesanal';
 
-$resultado=mysqli_query($con,$consulta2);
+$resultado = mysqli_query($con,$consulta2);
 
 ?>
 
@@ -78,7 +78,7 @@ $resultado=mysqli_query($con,$consulta2);
 						</tr>
 
 						<?php
-						while($fila=mysqli_fetch_array($resultado)){
+						while($fila = mysqli_fetch_array($resultado)){
 							echo "<tr>";
 							echo "<td>".$fila["ID_producto_artesanal"]."</td>";
 							echo "<td>".$fila["nombre_producto"]."</td>";

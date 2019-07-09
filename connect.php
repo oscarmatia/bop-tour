@@ -11,9 +11,12 @@
 		
 		mysqli_select_db($con, $db);
 		
+        $con -> set_charset("utf8");
+        
 		return $con;
 	}
 
+    
 
 ?>
 
