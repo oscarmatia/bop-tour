@@ -1,11 +1,11 @@
 <?php 
-    include 'connect.php';
-    $con = conectar();
-    session_start();
+include 'connect.php';
+$con = conectar();
+session_start();
 
-    $consulta2='SELECT ID_producto_artesanal, nombre_producto, cantidad, descripcion,precio,comuna,categoria_producto from producto_artesanal';
+$consulta2='SELECT ID_producto_artesanal, nombre_producto, cantidad, descripcion,precio,comuna,categoria_producto from producto_artesanal';
 
-    $resultado=mysqli_query($con,$consulta2);
+$resultado=mysqli_query($con,$consulta2);
 
 ?>
 
@@ -15,7 +15,8 @@
 	<meta charset="UTF-8">
 	<title>Mis Productos</title>
 	<link rel="stylesheet" type="text/css" href="mis_productos.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
 </head>
 <body>
 
