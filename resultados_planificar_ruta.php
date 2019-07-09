@@ -52,13 +52,15 @@
                         $resultado_lugar = mysqli_query($con, $consulta_lugar);
                     
 						while($row_r = mysqli_fetch_assoc($resultado_lugar)){
+                            
+                            $_SESSION['ID_lugar_turistico'] = $row_r['ID_lugar_turistico'];
                     ?>
                         <tr>
                             <td><img src="Images/<?php echo $row_r['imagen']; ?>" height="90px"></td>
                             <td><?php echo $row_r['nombre_lugar_turistico']; ?></td>
                             <td><?php echo $row_r['direccion']; ?></td>
                             <td><?php echo $row_r['nombre_comuna']; ?></td>
-                            <td><a href="after_planificar_ruta.php"><button style="background: green; border-color: green; color:white;">IR</button></a></td>
+                            <td><a href="after_planificar_ruta.php?ID_lugar_turistico=<?php echo $_SESSION['ID_lugar_turistico']; ?>"><button style="background: green; border-color: green; color:white;">IR</button></a></td>
                         </tr>
                     <?php
 					} 
