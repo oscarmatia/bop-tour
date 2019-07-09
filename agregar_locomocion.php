@@ -71,7 +71,7 @@
                 <input type="hidden" name="ID_cliente" value="<?php echo $ID_cliente ?>">  
              </div>
              
-             <input class="boton2" type="submit" name="Publicar" value="Agregar vehiculo" style="padding: 1%; margin: 4%; margin-left: 45%; color: white;"> 
+             <input class="boton2" type="submit" name="" value="Agregar vehiculo" style="padding: 1%; margin: 4%; margin-left: 45%; color: white;"> 
             </form>
                        
         </div>

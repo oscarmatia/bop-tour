@@ -32,7 +32,39 @@
         </div>
     </form>
     <div class="contenedor">
+        <h3 style="color:white; margin-left: 5%; margin-top: 2%;">Resultados</h3>
+        <div class="caja_resultados">	
         
+			 <table style="width:100%; color: white; text-align:center; border-color: white;" border="3">
+				  <tr>
+                    <th>Imagen</th>
+				    <th>Lugar Turistico</th>
+				    <th>Direccion</th>
+				    <th>Comuna</th>
+				    <th>Opciones</th>
+				  </tr>
+					<?php
+                        require('connect.php');
+                        $con = conectar();
+                        
+                        $consulta_lugar = "SELECT * FROM lugar_turistico JOIN comuna USING (cut_comuna)";
+                 
+                        $resultado_lugar = mysqli_query($con, $consulta_lugar);
+                    
+						while($row_r = mysqli_fetch_assoc($resultado_lugar)){
+                    ?>
+                        <tr>
+                            <td><img src="Images/<?php echo $row_r['imagen']; ?>" height="90px"></td>
+                            <td><?php echo $row_r['nombre_lugar_turistico']; ?></td>
+                            <td><?php echo $row_r['direccion']; ?></td>
+                            <td><?php echo $row_r['nombre_comuna']; ?></td>
+                            <td><a href="after_planificar_ruta.php"><button style="background: green; border-color: green; color:white;">IR</button></a></td>
+                        </tr>
+                    <?php
+					} 
+					?>
+			</table>
+        </div>
     </div>
     
     <footer class="footer">
