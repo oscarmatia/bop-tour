@@ -59,6 +59,9 @@
           </li>
           <li style="margin-top:2%; color: white;">Puntos vencidos: 0</li>
       </ul>
+      <br><br><br><br><br><br><br><br>
+      <a href="agregar_locomocion.php?ID_cliente=<?php echo $_SESSION['ID_cliente']; ?>" id="auto">Agregar vehiculo</a>
+      
        <hr align="center" class="linea">
         </div>
         <div class="derecha">
