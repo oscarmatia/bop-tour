@@ -4,7 +4,7 @@
     session_start();
     $con = conectar();
 
-    $ID_productor = $_POST['ID_productor'];
+    $ID_productor = $_GET['ID_productor'];
 	$nombre_tienda = $_POST['nombre_tienda'];
 	$ubicacion = $_POST['ubicacion'];
 	$rubro = $_POST['rubro'];

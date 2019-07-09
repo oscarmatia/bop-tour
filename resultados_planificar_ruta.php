@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <title>Resultados</title>
     <link rel="stylesheet" href="resultados_planificar_ruta.css">
+    <script src="redireccion_cerrar_sesion.js"></script>
 </head>
 <body>
     <img src="camino_campo.jpg" alt="" class="imagen_fondo">

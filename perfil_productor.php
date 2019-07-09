@@ -2,6 +2,9 @@
     require('connect.php');
     session_start();
     $con= conectar();
+    
+    $var = $_SESSION['ID_productor'];
+    
 
     $consulta2='SELECT ID_producto_artesanal, nombre_producto, cantidad, descripcion,precio,comuna,categoria_producto from producto_artesanal';
     $resultado=mysqli_query($con,$consulta2);
@@ -151,23 +154,30 @@
     <hr align="center" class="linea2">
 
     <div class="tiendas">
-        <b style="color:white;">
-            <?php       
-//            
-//            $consulta22 = "SELECT * FROM tienda WHERE ID_productor = '$ID_productor'";
-//            
-//            $resultado22 = mysqli_query($con, $consulta22);
-//            
-//            while($row2 = mysqli_fetch_assoc($resultado22)){
-//                $nombre_tienda = row["nombre_tienda"];
-//            }
-            echo $_SESSION['ID_productor'];
-            ?>       
-        </b>
+           <table style="width: 100%; color:white; text-align: center;">
+           <tr>
+               <th>Nombre tienda</th>
+               <th>Direccion</th>
+               <th>Opciones</th>
+           </tr>
+            <?php            
+                $consulta_shop = "SELECT * FROM tienda WHERE ID_productor = '$var'";
+                
+                $resultado_shop = mysqli_query($con,$consulta_shop);
+                while($row_shop = mysqli_fetch_assoc($resultado_shop)){
+            ?>
+            <tr>
+                <td><?php echo $row_shop['nombre_tienda']; ?></td>
+                <td><?php echo $row_shop['ubicacion']; ?></td>
+            </tr>
+<?php        
+                }
+?>       
+        </table>
     </div>
 
     <div class="iconos2">
-      <a href="publicar_tienda.php">
+      <a href="publicar_tienda.php?ID_productor=<?php echo $_SESSION['ID_productor']; ?>">
          <i class="material-icons" id="icon4">
             add_circle
         </i>
