@@ -4,18 +4,17 @@
     session_start();
 
     $ID_productor = $_GET['ID_productor'];
-    $categoria_producto = $_POST['categoria_producto'];
+
     $nombre_producto = $_POST['nombre_producto'];
+    $cantidad = $_POST['cantidad'];
     $descripcion = $_POST['descripcion'];
     $precio = $_POST['precio'];
-    $cantidad = $_POST['cantidad'];
-    $imagen[] = $_POST['imagen[]'];
-    $region = $_POST['region'];
-    $comuna = $_POST['comuna'];
+    $categoria_producto = $_POST['categoria_producto'];
     
+        
 
 
-    $consulta_add_products = "INSERT INTO producto_artesanal (ID_producto_artesanal, nombre_producto, ID_productor, imagen, cantidad, descripcion, precio, cut_comuna, cut_region, region, comuna, categoria_producto) VALUES ('', '$nombre_producto', '$ID_productor', 'NULL', '$cantidad', '$descripcion', '$precio', 'NULL', 'NULL', '$region', '$comuna', '$categoria_producto')";
+    $consulta_add_products = "INSERT INTO producto_artesanal (ID_producto_artesanal, nombre_producto, ID_productor, imagen, cantidad, descripcion, precio, categoria_producto) VALUES ('', '$nombre_producto', '$ID_productor', 'NULL', '$cantidad', '$descripcion', '$precio', '$categoria_producto')";
 
     $resultado_add_products = mysqli_query($con, $consulta_add_products);
 
