@@ -1,30 +1,26 @@
-?>
-
 <?php
-require('connect.php');
-session_start();
+    require('connect.php');
+    $con = conectar();
+    session_start();
 
-$nCategoria_producto = $_POST['categoria_producto'];
-$nNombre_producto= $_POST['nombre_producto'];
-$nDescripcion= $_POST['descripcion'];
-$nPrecio= $_POST['precio'];
-$nCantidad= $_POST['cantidad'];
-//$nImagen[]= $_POST['imagen[]'];
-$nRegion= $_POST['region'];
-$nComuna= $_POST['comuna'];
+    $ID_productor = $_GET['ID_productor'];
+    $categoria_producto = $_POST['categoria_producto'];
+    $nombre_producto = $_POST['nombre_producto'];
+    $descripcion = $_POST['descripcion'];
+    $precio = $_POST['precio'];
+    $cantidad = $_POST['cantidad'];
+    $imagen[] = $_POST['imagen[]'];
+    $region = $_POST['region'];
+    $comuna = $_POST['comuna'];
+    
 
 
-$consulta= "SELECT categoria_producto,nombre_producto, descripcion,precio, precio,cantidad/*,imagen[]*/,region,comuna
-FROM producto_artesanal
-AND categoria_producto='$nCategoria_producto'
-AND nombre_producto='$nNombre_producto'
-AND descripcion='$nDescripcion'
-AND precio='$nPrecio'
-AND cantidad='$nCantidad' 
-AND region='$nRegion'
-AND comuna='$nComuna'";
+    $consulta_add_products = "INSERT INTO producto_artesanal (ID_producto_artesanal, nombre_producto, ID_productor, imagen, cantidad, descripcion, precio, cut_comuna, cut_region, region, comuna, categoria_producto) VALUES ('', '$nombre_producto', '$ID_productor', 'NULL', '$cantidad', '$descripcion', '$precio', 'NULL', 'NULL', '$region', '$comuna', '$categoria_producto')";
 
-header("Location:ventana_resultado_producto.php");
+    $resultado_add_products = mysqli_query($con, $consulta_add_products);
+
+    echo '<script>alert("Agregado con exito")</script>';
+    echo "<script>location.href='perfil_productor.php'</script>";
 
 ?>
 

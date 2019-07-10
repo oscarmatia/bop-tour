@@ -1,6 +1,8 @@
 <?php
 require('connect.php');
+$con = conectar();
 session_start();
+$ID_productor = $_GET['ID_productor'];
 ?>
 
 
@@ -56,7 +58,7 @@ session_start();
 	</div>
 
 
-	<form action="guardar_producto_artesanal.php" class="formulario-producto">
+	<form action="guardar_producto_artesanal.php?ID_productor=<?php echo $_SESSION['ID_productor']; ?>" class="formulario-producto">
 		<div class="barra-3">
 
 			<div class="cuadrado-1">
@@ -87,7 +89,7 @@ session_start();
 
 					<div class="cont-titulo">
 						<p class="tit ">  Título </p>
-						<input name="nombre_producto"id="titulo_anuncio" type="text"  required>
+						<input name="nombre_producto" id="titulo_anuncio" type="text"  required>
 					</div>
 
 
@@ -114,12 +116,12 @@ session_start();
 
 					<div class="cont-precio">
 						<p class="pre ">Precio</p>
-						<input name="precio"id="precio" type="text"  required>
+						<input name="precio" id="precio" type="text"  required>
 					</div>
 
 					<div class="cont-cant">
 						<p class="cant ">Cantidad</p>
-						<input name="cantidad"id="cantidad" type="text"  required>
+						<input name="cantidad" id="cantidad" type="text"  required>
 					</div>
 
 

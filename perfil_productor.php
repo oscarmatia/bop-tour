@@ -136,7 +136,7 @@
        <i class="material-icons" id="icon_add">
         add_circle
     </i>
-    <a href="publicar_producto_artesanal.php" style="color:white;" id="text_add">Agregar producto</a>
+    <a href="publicar_producto_artesanal.php?ID_productor=<?php echo $_SESSION['ID_productor']; ?>" style="color:white;" id="text_add">Agregar producto</a>
 
     <i class="material-icons" id="icon3">
         add_circle
@@ -180,15 +180,11 @@
     </div>
 
     <div class="iconos2">
-      <a href="publicar_tienda.php?ID_productor=<?php echo $_SESSION['ID_productor']; ?>">
-         <i class="material-icons" id="icon4">
-            add_circle
-        </i>
-    Publicar tienda</a> 
-
-</div>
-
-
+     <i class="material-icons" id="icon6">
+        add_circle
+    </i>
+      <a href="publicar_tienda.php?ID_productor=<?php echo $_SESSION['ID_productor']; ?>"  style="color:white; margin-left: 2%;">Publicar tienda</a> 
+    </div>
 </div>
 </div>
 
