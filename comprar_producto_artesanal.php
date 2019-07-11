@@ -1,4 +1,6 @@
 <?php
+    require('connect.php');
+    $con = conectar();
 	session_start();
 ?>
 
@@ -54,22 +56,21 @@
 				<input type="Buscar" placeholder="Buscar..." class="inp" name="busqueda">						
 		</form>
 <?php
-			$conexion = mysqli_connect("localhost", "root", "", "bop-tour");
 
-			$consulta = "SELECT DISTINCT nombre_producto FROM producto_artesanal ";
+			$consulta_sea = "SELECT DISTINCT nombre_producto FROM producto_artesanal ";
 					
-			$resultado = mysqli_query($conexion, $consulta);
+			$resultado_sea = mysqli_query($con, $consulta_sea);
 			
 
-			while($fila = mysqli_fetch_array($resultado))
+			while($fila_sea = mysqli_fetch_array($resultado_sea))
 			{
 ?>
 				<br>
 				<input type="radio" name="producto_artesanal"> 
 <?php
-				echo " $fila[nombre_producto]  <br> ";
+				echo " $fila_sea[nombre_producto]  <br> ";
 ?>				
-				<img src="<?php print $fila[imagen] ?>" >
+				<img src="<?php echo $fila_sea[imagen] ?>" >
 <?php 
             }	
 ?>	
