@@ -1,4 +1,5 @@
 <?php
+    require('connect.php');
 	session_start();
 ?>
 
@@ -54,7 +55,8 @@
 		
 	
 		<a href="comprar_producto_artesanal.php" class="btn2 green2" style="text-decoration: none" ><b>Comprar</b></a>
-		<a href=" iniciar_sesion.php"  class="btn green" style="text-decoration: none" >Visitar</a>
+		
+		<a href="planificar_ruta.php"  class="btn green" style="text-decoration: none" >Visitar</a>
 			
 		<div class="texto">
 			<center>
